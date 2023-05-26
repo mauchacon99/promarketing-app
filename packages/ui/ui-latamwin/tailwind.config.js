@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-import shareConfig from "tailwind-config/tailwind.config";
+import sharedConfig from "tailwind-config/tailwind.config";
 
 module.exports = {
-  presets: [shareConfig],
+  presets: [sharedConfig],
   content: ["./src/**/*.{tsx,jsx}"],
   plugins: [],
 };

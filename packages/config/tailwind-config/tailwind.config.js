@@ -1,11 +1,13 @@
 module.exports = {
-	theme: {
-		extend: {
-			colors: {
-				skin: {
-					default: 'var(--color-primary-default)',
-				},
-			},
-		},
-	},
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          default: "var(--color-primary-default)",
+          focus: "var(--color-primary-focus)",
+          content: "var(--color-primary-content)",
+        },
+      },
+    },
+  },
 };
