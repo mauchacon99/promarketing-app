@@ -19,6 +19,6 @@
     "apps/*",
 		"apps/docs/*",
     "apps/webs/*",
-    "packages/config/*"
+    "packages/**"
   ]
 }
