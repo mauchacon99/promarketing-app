@@ -1,0 +1,4 @@
+**/.git
+**/node_modules
+**/.gitlab-ci.yml
+**/storybook-static
