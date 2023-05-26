@@ -1,3 +1,7 @@
+
+import 'ui-latamwin/src/styles.scss';
+ 
+
 export default function RootLayout({
   children,
 }: {
