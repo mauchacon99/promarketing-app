@@ -11,24 +11,7 @@ const Template: StoryFn<{}> = () => {
 	return <Card />;
 };
 
-const argTypes: Partial<ArgTypes<{}>> = {
-	onClick: { control: false },
-	children: { control: false },
-	buttonType: {
-		options: ['primary', 'secondary'],
-		control: { type: 'radio' },
-	},
-	buttonStyle: {
-		options: ['default', 'shadow', 'outlined', 'text'],
-		control: { type: 'radio' },
-	},
-	buttonSize: {
-		options: ['large', 'medium', 'small'],
-		control: { type: 'radio' },
-	},
-	loading: { type: 'boolean' },
-	disabled: { type: 'boolean' },
-};
+const argTypes: Partial<ArgTypes<{}>> = {};
 
 export const CardDefault = Template.bind({});
  
