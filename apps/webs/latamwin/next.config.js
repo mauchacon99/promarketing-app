@@ -10,5 +10,6 @@ module.exports = {
 			'ui-latamwin/src/**/*',
 			path.join(__dirname, 'scss'),
 		],
+		additionalData: `@import "./scss/styles.scss";`,
 	},
 };
