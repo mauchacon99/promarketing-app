@@ -7,20 +7,16 @@ import { defineConfig, UserConfigExport } from 'vite';
  * @returns Config.
  */
 const defaultConfig = ({ mode }: { mode: string }): UserConfigExport => {
-	const config: UserConfigExport = {
-		mode: mode,
-		root: './',
-		build: {
-			sourcemap:
-				mode === 'development' || mode === 'storybook' ? true : false,
-			minify:
-				mode === 'development' || mode === 'storybook'
-					? false
-					: 'terser',
-			reportCompressedSize: true,
-			copyPublicDir: false,
-		},
-	};
-	return defineConfig(config);
+  const config: UserConfigExport = {
+    mode: mode,
+    root: './',
+    build: {
+      sourcemap: mode === 'development' || mode === 'storybook' ? true : false,
+      minify: mode === 'development' || mode === 'storybook' ? false : 'terser',
+      reportCompressedSize: true,
+      copyPublicDir: false,
+    },
+  };
+  return defineConfig(config);
 };
 export default defaultConfig;

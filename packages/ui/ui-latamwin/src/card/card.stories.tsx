@@ -3,12 +3,12 @@ import Card from './card';
 import React from 'react';
 
 const StoryBookComponent = {
-	title: 'UI-LATAMWIN/Card',
-	component: Card,
+  title: 'UI-LATAMWIN/Card',
+  component: Card,
 } as Meta<{}>;
 
 const Template: StoryFn<{}> = () => {
-	return <Card />;
+  return <Card />;
 };
 
 const argTypes: Partial<ArgTypes<{}>> = {};

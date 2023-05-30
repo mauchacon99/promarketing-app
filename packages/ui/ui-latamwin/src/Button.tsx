@@ -3,8 +3,8 @@
 import * as React from 'react';
 
 export interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
-	/** ClassName. */
-	className: string;
+  /** ClassName. */
+  className: string;
 }
 
 /**
@@ -14,11 +14,11 @@ export interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
  * @returns JSX.Element.
  */
 export const Button = (props: ButtonProps) => {
-	const { className } = props;
+  const { className } = props;
 
-	return (
-		<button className={className} onClick={() => alert('boop')}>
-			Boop
-		</button>
-	);
+  return (
+    <button className={className} onClick={() => alert('boop')}>
+      Boop
+    </button>
+  );
 };

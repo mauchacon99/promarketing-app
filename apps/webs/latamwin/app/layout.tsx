@@ -2,7 +2,7 @@ import 'ui-latamwin/src/styles.scss';
 
 /**
  * RootLayout.
- * 
+ *
  * @param props Props.
  * @param props.children JSX.Element.
  * @returns JSX.Element.
@@ -10,10 +10,11 @@ import 'ui-latamwin/src/styles.scss';
 export default function RootLayout({
 	children,
 }: {
+	/** */
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en">
+		<html lang='en'>
 			<body>{children}</body>
 		</html>
 	);
