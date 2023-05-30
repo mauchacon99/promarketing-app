@@ -1,8 +1,8 @@
 # Ignore artifacts:
 
 # Docs
-
-/README.md
+# ignore all readme
+**/*.md
 
 # next.js
 **/coverage
