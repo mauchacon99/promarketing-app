@@ -5,4 +5,11 @@
 /README.md
 
 # next.js
-/apps/webs/latamwin/.next/
+**/coverage
+**/storybook-static/
+**/.next
+**/.git
+**/node_modules
+
+# TODO
+# build / dist / changeset 

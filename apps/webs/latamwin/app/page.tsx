@@ -2,7 +2,7 @@ import { Button, Header, Card } from 'ui-latamwin';
 
 /**
  * Descripión.
- * 
+ *
  * @returns JSX.Element.
  */
 export default function page() {

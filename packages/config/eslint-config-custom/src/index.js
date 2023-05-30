@@ -1,9 +1,19 @@
 module.exports = {
+	globals: {
+		React: true,
+		context: true,
+		expect: true,
+		jsdom: true,
+		JSX: true,
+	},
 	extends: [
-		'eslint:recommended',
 		'next',
-		'turbo',
+		'next/core-web-vitals',
 		'prettier',
+		'turbo',
+		'airbnb-typescript',
+		'eslint:recommended',
+		'plugin:react/recommended',
 		'./rules/jsdoc',
 		'./rules/typescript',
 	],
