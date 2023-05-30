@@ -3,12 +3,12 @@ module.exports = {
 	root: true,
 	extends: ['custom'],
 	rules: {
-		"@typescript-eslint/naming-convention": [
-			"warn",
-			  {
-				"selector": "function",
-				"format": ["PascalCase", "camelCase"]
-				 }
+		'@typescript-eslint/naming-convention': [
+			'warn',
+			{
+				selector: 'function',
+				format: ['PascalCase', 'camelCase'],
+			},
 		],
 		'@next/next/no-img-element': 'off',
 		'no-unused-vars': [
