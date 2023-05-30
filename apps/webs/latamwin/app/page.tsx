@@ -1,11 +1,16 @@
 import { Button, Header, Card } from 'ui-latamwin';
 
-export default function Page() {
+/**
+ * Descripión.
+ * 
+ * @returns JSX.Element.
+ */
+export default function page() {
 	return (
 		<>
 			<div>
 				<Header className="bg-primary-default" />
-				<Button />
+				<Button className={''} />
 				<Header className="pedro" />
 				<Card />
 			</div>
