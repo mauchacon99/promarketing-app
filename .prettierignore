@@ -1,0 +1,8 @@
+# Ignore artifacts:
+
+# Docs
+
+/README.md
+
+# next.js
+/apps/webs/latamwin/.next/
