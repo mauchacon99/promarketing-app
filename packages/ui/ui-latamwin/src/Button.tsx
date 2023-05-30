@@ -13,7 +13,7 @@ export interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
  * @param props - ButtonProps.
  * @returns JSX.Element.
  */
-export const button = (props: ButtonProps) => {
+export const Button = (props: ButtonProps) => {
 	const { className } = props;
 
 	return (
