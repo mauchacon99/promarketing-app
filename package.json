@@ -6,7 +6,8 @@
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "format": "prettier --write \"**/*.{ts,tsx,md,js}\"",
-    "format:check": "prettier --check  \"**/*.{ts,tsx,md,js}\""
+    "format:check": "prettier --check  \"**/*.{ts,tsx,md,js}\"",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.6.5",
