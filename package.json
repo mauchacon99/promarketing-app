@@ -9,9 +9,11 @@
     "format:check": "prettier --check  \"**/*.{ts,tsx,md,js}\""
   },
   "devDependencies": {
+    "@commitlint/config-conventional": "^17.6.5",
     "@turbo/gen": "^1.9.7",
     "eslint": "7.27.0",
     "eslint-config-custom": "0.0.0",
+    "husky": "^8.0.3",
     "prettier": "^2.5.1",
     "turbo": "^1.9.7"
   },
