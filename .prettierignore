@@ -1,0 +1,15 @@
+# Ignore artifacts:
+
+# Docs
+# ignore all readme
+**/*.md
+
+# next.js
+**/coverage
+**/storybook-static/
+**/.next
+**/.git
+**/node_modules
+
+# TODO
+# build / dist / changeset 

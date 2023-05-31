@@ -1,0 +1,23 @@
+{
+  "singleQuote": false,
+  "tabWidth": 2,
+  "overrides": [
+    {
+      "files": [
+        "**/*.scss",
+        "**/*.css"
+      ],
+      "options": {
+        "singleQuote": true
+      }
+    }
+  ],
+  "useTabs": false,
+  "semi": true,
+  "quoteProps": "as-needed",
+  "jsxSingleQuote": false,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "endOfLine": "lf"
+}

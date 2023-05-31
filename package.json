@@ -4,12 +4,14 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "lint:fix": "turbo run lint:fix",
+    "format": "prettier --write \"**/*.{ts,tsx,md,js}\"",
+    "format:check": "prettier --check  \"**/*.{ts,tsx,md,js}\""
   },
   "devDependencies": {
     "@turbo/gen": "^1.9.7",
-    "eslint": "^7.32.0",
-    "eslint-config-custom": "*",
+    "eslint": "7.27.0",
+    "eslint-config-custom": "0.0.0",
     "prettier": "^2.5.1",
     "turbo": "^1.9.7"
   },
@@ -17,7 +19,7 @@
   "packageManager": "yarn@1.22.11",
   "workspaces": [
     "apps/*",
-		"apps/docs/*",
+    "apps/docs/*",
     "apps/webs/*",
     "packages/**"
   ]

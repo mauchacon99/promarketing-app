@@ -9,7 +9,7 @@ module.exports = {
     "@typescript-eslint/naming-convention": [
       "warn",
       {
-        selector: "function",
+        selector: "variable",
         format: ["PascalCase", "camelCase"],
       },
     ],
@@ -20,6 +20,5 @@ module.exports = {
         argsIgnorePattern: "^_",
       },
     ],
-    eqeqeq: ["error", "always"],
   },
 };
