@@ -1,19 +1,10 @@
 {
-  "extends": "tsconfig/react-library.json",
-  "compilerOptions": {
-    "baseUrl": "./",
-    "types": [
-      "@types/node"
-    ],
-    "jsx": "react"
-  },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "src/**/*.scss"
-  ]
+	"extends": "tsconfig/react-library.json",
+	"compilerOptions": {
+		"baseUrl": "./",
+		"types": ["@types/node"],
+		"jsx": "react"
+	},
+	"include": ["src/**/*.ts", "src/**/*.tsx"],
+	"exclude": ["node_modules", "dist", "src/**/*.scss"]
 }

@@ -6,7 +6,12 @@ import { defineConfig, UserConfigExport } from "vite";
  * @param props.mode - Mode.
  * @returns Config.
  */
-const defaultConfig = ({ mode }: { mode: string }): UserConfigExport => {
+function defaultConfig({
+  mode,
+}: {
+  /** Mode. */
+  mode: string;
+}): UserConfigExport {
   const config: UserConfigExport = {
     mode: mode,
     root: "./",
@@ -18,5 +23,5 @@ const defaultConfig = ({ mode }: { mode: string }): UserConfigExport => {
     },
   };
   return defineConfig(config);
-};
+}
 export default defaultConfig;

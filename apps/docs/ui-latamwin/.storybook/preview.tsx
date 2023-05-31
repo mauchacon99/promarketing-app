@@ -1,4 +1,4 @@
-import 'ui-latamwin/src/styles.scss';
+import "ui-latamwin/src/styles.scss";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -8,4 +8,4 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
+};
