@@ -1,9 +1,9 @@
-import { ArgTypes, Meta, StoryFn } from '@storybook/react';
-import Card from './card';
-import React from 'react';
+import { ArgTypes, Meta, StoryFn } from "@storybook/react";
+import Card from "./card";
+import React from "react";
 
 const StoryBookComponent = {
-  title: 'UI-LATAMWIN/Card',
+  title: "UI-LATAMWIN/Card",
   component: Card,
 } as Meta<typeof Card>;
 

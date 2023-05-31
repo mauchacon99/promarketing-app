@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-export interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
+export interface ButtonProps extends React.ComponentPropsWithoutRef<"button"> {
   /** ClassName. */
   className: string;
 }
@@ -15,7 +15,7 @@ export const Button = (props: ButtonProps) => {
   const { className } = props;
 
   return (
-    <button className={className} onClick={() => alert('boop')}>
+    <button className={className} onClick={() => alert("boop")}>
       Boop
     </button>
   );

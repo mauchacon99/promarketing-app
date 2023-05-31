@@ -1,7 +1,7 @@
-import 'ui-latamwin/src/styles.scss';
+import "ui-latamwin/src/styles.scss";
 
 export const parameters = {
-  actions: { argTypesRegex: '^on[A-Z].*' },
+  actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
     matchers: {
       color: /(background|color)$/i,
