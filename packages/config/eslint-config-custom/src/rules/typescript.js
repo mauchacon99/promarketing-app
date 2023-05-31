@@ -5,7 +5,6 @@ module.exports = {
     'jsdoc/require-param-type': 'off',
     'jsdoc/require-property-type': 'off',
     'jsdoc/require-returns-type': 'off',
-    '@typescript-eslint/indent': ['error', 2],
     '@typescript-eslint/consistent-type-definitions': 'error',
     '@typescript-eslint/no-explicit-any': 'error',
     '@typescript-eslint/no-non-null-assertion': 'error',

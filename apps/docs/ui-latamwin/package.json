@@ -7,9 +7,9 @@
     "build": "storybook build --docs",
     "preview-storybook": "serve storybook-static",
     "clean": "rm -rf .turbo && rm -rf node_modules",
-    "lint": "eslint \"stories/**/*.{js,ts,tsx}\"",
-    "lint:check": "prettier --check \"**/*.{js,ts,tsx,md,mdx,json}\"",
-    "lint:fix": "prettier --write  \"**/*.{js,ts,tsx,md,mdx,json}\""
+    "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "format:check": "prettier --check \"**/*.{js,ts,tsx,md,mdx,json}\"",
+    "format:fix": "prettier --write  \"**/*.{js,ts,tsx,md,mdx,json}\""
   },
   "dependencies": {
     "autoprefixer": "^10.4.14",

@@ -5,4 +5,20 @@ module.exports = {
   parserOptions: {
     project: [path.join(__dirname, 'tsconfig.eslint.json')],
   },
+  rules: {
+    '@typescript-eslint/naming-convention': [
+      'warn',
+      {
+        selector: 'variable',
+        format: ['PascalCase', 'camelCase'],
+      },
+    ],
+    '@next/next/no-img-element': 'off',
+    'no-unused-vars': [
+      'error',
+      {
+        argsIgnorePattern: '^_',
+      },
+    ],
+  },
 };

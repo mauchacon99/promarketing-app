@@ -3,11 +3,14 @@
 	"include": [
 		// 👇️ add all the directories and files
 		// that you want to lint here
-		"stories",
 		// add all files in which you see
 		// the "parserOptions.project" error
+
 		"./tsconfig.eslint.json",
 		"./tsconfig.json",
-		".eslintrc.cjs"
+		".eslintrc.js",
+		"postcss.config.js",
+		"tailwind.config.js",
+		"vite.config.ts"
 	]
 }

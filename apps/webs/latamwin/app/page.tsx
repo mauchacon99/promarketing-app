@@ -1,5 +1,4 @@
 import { Button, Header, Card } from 'ui-latamwin';
-
 /**
  * Descripión.
  *
@@ -9,9 +8,9 @@ export default function page() {
 	return (
 		<>
 			<div>
-				<Header className='bg-primary-default' />
+				<Header className="bg-primary-default" />
 				<Button className={''} />
-				<Header className='pedro' />
+				<Header className="pedro" />
 				<Card />
 			</div>
 		</>

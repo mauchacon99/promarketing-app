@@ -6,6 +6,8 @@
 		"app",
 		// add all files in which you see
 		// the "parserOptions.project" error
+		"next-env.d.ts",
+		"postcss.config.js",
 		"./tsconfig.eslint.json",
 		"./tailwind.config.js",
 		"./tsconfig.json",

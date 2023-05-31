@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "lint:fix": "prettier --write \"**/*.{ts,tsx,md,js}\" && eslint \"**/*.ts*\" --fix",
     "format": "prettier --write \"**/*.{ts,tsx,md,js}\"",
-    "format-check": "prettier --check  \"**/*.{ts,tsx,md,js}\"",
+    "format:check": "prettier --check  \"**/*.{ts,tsx,md,js}\"",
     "clean": "turbo run clean && rm -rf node_modules"
   },
   "dependencies": {
@@ -20,8 +21,8 @@
     "postcss-preset-env": "^8.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ui-latamwin": "0.0.0",
-    "tailwind-config": "0.0.0"
+    "tailwind-config": "0.0.0",
+    "ui-latamwin": "0.0.0"
   },
   "devDependencies": {
     "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
@@ -33,6 +34,7 @@
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-custom": "0.0.0",
     "eslint-config-next": "^13.4.3",
+    "eslint-config-turbo": "^1.10.0",
     "postcss": "^8.4.23",
     "postcss-import": "^15.1.0",
     "postcss-nesting": "^11.2.2",
@@ -40,7 +42,6 @@
     "prettier-plugin-tailwindcss": "^0.1.7",
     "sass": "^1.62.1",
     "scss": "^0.2.4",
-
     "tailwindcss": "^3.3.2",
     "tsconfig": "*",
     "typescript": "^4.5.3"

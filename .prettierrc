@@ -1,8 +1,6 @@
 {
   "singleQuote": true,
-  "tabWidth": 2,
-  "useTabs": false,
-  "semi": true,
+  "tabWidth": 4,
   "overrides": [
     {
       "files": [
@@ -10,12 +8,14 @@
         "**/*.css"
       ],
       "options": {
-        "singleQuote": false
+        "singleQuote": true
       }
     }
   ],
+  "useTabs": true,
+  "semi": true,
   "quoteProps": "as-needed",
-  "jsxSingleQuote": true,
+  "jsxSingleQuote": false,
   "trailingComma": "all",
   "bracketSpacing": true,
   "arrowParens": "always",
