@@ -8,8 +8,8 @@
     "preview-storybook": "serve storybook-static",
     "clean": "rm -rf .turbo && rm -rf node_modules",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
-    "format:check": "prettier --check \"**/*.{js,ts,tsx,md,mdx,json}\"",
-    "format:fix": "prettier --write  \"**/*.{js,ts,tsx,md,mdx,json}\""
+    "format:check": "prettier --check \"**/*.{js,ts,tsx,json}\"",
+    "format:fix": "prettier --write  \"**/*.{js,ts,tsx,json}\""
   },
   "dependencies": {
     "autoprefixer": "^10.4.14",
