@@ -1,3 +1,4 @@
+"use client";
 import { Button, Header, Card } from "ui-latamwin";
 /**
  * Descripión.
