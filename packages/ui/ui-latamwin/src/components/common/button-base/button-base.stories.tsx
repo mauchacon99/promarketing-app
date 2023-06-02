@@ -1,11 +1,10 @@
 import React from "react";
 import { ArgTypes, Meta, StoryFn } from "@storybook/react";
 import { ButtonBaseProps } from "./button-base.interface";
-
 import ButtonBase from "./button-base";
 
 const StoryBookComponent = {
-    title: "UI-LATAMWIN/ButtonBase",
+    title: "ElEMENTS/ButtonBase",
     component: ButtonBase,
 } as Meta<ButtonBaseProps>;
 
@@ -23,6 +22,7 @@ const argTypes: Partial<ArgTypes<ButtonBaseProps>> = {
     intent: {
         options: ["primary", "secondary"],
         control: { type: "radio" },
+        description: "Este es el button principal",
     },
     variant: {
         options: ["contained", "outlined", "text"],
@@ -33,7 +33,8 @@ const argTypes: Partial<ArgTypes<ButtonBaseProps>> = {
         control: { type: "radio" },
     },
     shadow: {
-        options: ["sm", "md", "lg", "xl"],
+        defaultValue: "none",
+        options: ["none", "sm", "md", "lg", "xl"],
         control: { type: "radio" },
     },
     disabled: { type: "boolean" },
@@ -47,6 +48,10 @@ Primary.args = {
     variant: "contained",
 };
 export const Secondary = Template.bind({});
+Secondary.args = {
+    intent: "secondary",
+    variant: "contained",
+};
 
 Secondary.argTypes = argTypes;
 

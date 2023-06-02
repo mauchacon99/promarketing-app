@@ -1,6 +1,6 @@
 import React from "react";
 import { ButtonBaseProps } from "./button-base.interface";
-import { buttonCva } from "../../cva/button-base-cva";
+import { buttonCva } from "../../../cva/button-base";
 
 export const defaultProps: ButtonBaseProps = {
     intent: "primary",
