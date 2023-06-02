@@ -1,21 +1,17 @@
 {
-	"extends": "tsconfig/base.json",
-	"compilerOptions": {
-		"baseUrl": "../../",
-		"plugins": [
-			{
-				"name": "next"
-			}
-		],
-		"paths": {
-			"@/*": ["./src/*"],
-		},
-		"incremental": true
-	},
-	"include": [
-		"**/*.ts",
-		"**/*.tsx",
-		"./tsconfig.eslint.json",
-	],
-	"exclude": ["node_modules"]
+    "extends": "tsconfig/base.json",
+    "compilerOptions": {
+        "baseUrl": "../../",
+        "plugins": [
+            {
+                "name": "next"
+            }
+        ],
+        "paths": {
+            "@/*": ["./src/*"]
+        },
+        "incremental": true
+    },
+    "include": ["**/*.ts", "**/*.tsx", "./tsconfig.eslint.json"],
+    "exclude": ["node_modules"]
 }
