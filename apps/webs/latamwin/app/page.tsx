@@ -1,19 +1,24 @@
 "use client";
-import { Button, Header, Card } from "ui-latamwin";
+import { ButtonBase } from "ui-latamwin";
 /**
  * Descripión.
  *
  * @returns JSX.Element.
  */
 export default function page() {
-  return (
-    <>
-      <div>
-        <Header className="bg-primary-default" />
-        <Button className={""} />
-        <Header className="pedro" />
-        <Card />
-      </div>
-    </>
-  );
+    return (
+        <>
+            <div>
+                <div className="m-4">
+                    <ButtonBase
+                        intent="secondary"
+                        variant="contained"
+                        size="lg"
+                        shadow="md"
+                        label={"Play"}
+                    />
+                </div>
+            </div>
+        </>
+    );
 }

@@ -1,0 +1,39 @@
+@layer base {
+    :root {
+        /* Palette Colors */
+        /* Primary  */
+        --color-primary-default: #091b50;
+        --color-primary-focus: #3c4d82;
+        --color-primary-content: #e0e4ef;
+        /* secondary  */
+        --color-secondary-default: #b89122;
+        --color-secondary-focus: #cfac48;
+        --color-secondary-content: #faf3e0;
+        /* accent */
+        --color-accent-default: #fbbf24;
+        --color-accent-focus: #fcd34d;
+        --color-accent-content: #fff7d7;
+        /* neutrals (fonts) */
+        --color-neutral-default: #0a1d37;
+        --color-neutral-focus: #4b5563;
+        --color-neutral-content: #909090;
+
+        /* Feedback Colors */
+        /* colors */
+        --color-info-content: #1d70c7;
+        --color-success-content: #22c55e;
+        --color-warning-content: #f3b51e;
+        --color-error-content: #dc2626;
+        /* opacity colors 50% */
+        --color-info: #d7f1fd;
+        --color-success: #edfbd8;
+        --color-warning: #fef7d1;
+        --color-error: #fce8db;
+        /* Bases */
+        --color-base-100: #efefef;
+        --color-base-200: #192e4f;
+        --color-base-300: #e0c87b;
+        --color-base-content: #ebdaae;
+    }
+
+}

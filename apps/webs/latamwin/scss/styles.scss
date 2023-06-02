@@ -4,14 +4,5 @@
 
 html:root,
 [data-theme] {
-	background-color: #efefef;
-}
-
-@layer base {
-	:root {
-		/* Primary  */
-		--color-primary-default: rgb(0, 255, 51);
-		--color-primary-focus: #3c4d82;
-		--color-primary-content: #e0e4ef;
-	}
+  background-color: #efefef;
 }
