@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-const sharedConfig = require("tailwind-config/tailwind.config.js");
+import sharedConfig from "tailwind-config/tailwind.config";
+
 module.exports = {
   content: [
     "../../../packages/ui/**/*.{js,ts,jsx,tsx}",
