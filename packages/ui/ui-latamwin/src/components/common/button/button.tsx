@@ -1,8 +1,8 @@
 import React from "react";
-import { ButtonBaseProps } from "./button-base.interface";
-import { buttonCva } from "../../../cva/button-base";
+import { ButtonProps } from "./button.interface";
+import { buttonCva } from "../../../cva/button";
 
-export const defaultProps: ButtonBaseProps = {
+export const defaultProps: ButtonProps = {
     intent: "primary",
     size: "md",
     label: "Text",
@@ -14,7 +14,7 @@ export const defaultProps: ButtonBaseProps = {
  * @param props - ButtonProps.
  * @returns JSX.Element.
  */
-const ButtonBase = (props: ButtonBaseProps) => {
+const Button = (props: ButtonProps) => {
     const { label, shadow, intent, className, size, variant } = {
         ...defaultProps,
         ...props,
@@ -30,4 +30,4 @@ const ButtonBase = (props: ButtonBaseProps) => {
     );
 };
 
-export default ButtonBase;
+export default Button;

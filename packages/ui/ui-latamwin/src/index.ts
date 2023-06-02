@@ -1,3 +1,3 @@
 // component exports
 
-export * from "./components/common/button-base";
+export * from "./components/common/button";
