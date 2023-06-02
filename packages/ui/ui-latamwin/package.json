@@ -1,30 +1,30 @@
 {
-  "name": "ui-latamwin",
-  "version": "0.0.0",
-  "main": "src",
-  "license": "MIT",
-  "scripts": {
-    "lint": "eslint \"**/*.ts*\"",
-    "lint:fix": "eslint \"**/*.ts*\" --fix",
-    "generate:component": "turbo gen react-component",
-    "format": "prettier --write \"**/*.{ts,tsx,js}\"",
-    "format:check": "prettier --check  \"**/*.{ts,tsx,js}\""
-  },
-  "dependencies": {
-    "@storybook/react": "^7.0.18",
-    "react": "^17.0.2",
-    "class-variance-authority": "^0.6.0"
-  },
-  "devDependencies": {
-    "class-variance-authority": "^0.6.0",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0",
-    "eslint": "^7.32.0",
-    "eslint-config-custom": "*",
-    "postcss-import": "^15.1.0",
-    "tailwind-config": "*",
-    "tailwindcss": "3.3.2",
-    "tsconfig": "*",
-    "typescript": "^4.5.2"
-  }
+    "name": "ui-latamwin",
+    "version": "0.0.0",
+    "main": "src",
+    "license": "MIT",
+    "scripts": {
+        "lint": "eslint \"**/*.ts*\"",
+        "lint:fix": "eslint \"**/*.ts*\" --fix",
+        "generate:component": "turbo gen react-component",
+        "format": "prettier --write \"**/*.{ts,tsx,js}\"",
+        "format:check": "prettier --check  \"**/*.{ts,tsx,js}\""
+    },
+    "dependencies": {
+        "@storybook/react": "^7.0.18",
+        "react": "^17.0.2",
+        "class-variance-authority": "^0.6.0"
+    },
+    "devDependencies": {
+        "class-variance-authority": "^0.6.0",
+        "@types/react": "^18.2.0",
+        "@types/react-dom": "^18.2.0",
+        "eslint": "^7.32.0",
+        "eslint-config-custom": "*",
+        "postcss-import": "^15.1.0",
+        "tailwind-config": "*",
+        "tailwindcss": "3.3.2",
+        "tsconfig": "*",
+        "typescript": "^4.5.2"
+    }
 }
