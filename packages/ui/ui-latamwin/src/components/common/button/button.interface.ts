@@ -1,8 +1,8 @@
 import { ButtonHTMLAttributes } from "react";
 import { type VariantProps } from "class-variance-authority";
-import { buttonCva } from "../../cva/button-base-cva";
+import { buttonCva } from "./../../../cva/button";
 
-export interface ButtonBaseProps
+export interface ButtonProps
     extends ButtonHTMLAttributes<HTMLButtonElement>,
         VariantProps<typeof buttonCva> {
     /** This text button. */
