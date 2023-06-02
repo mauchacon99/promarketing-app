@@ -1,5 +1,5 @@
 "use client";
-import { ButtonBase } from "ui-latamwin";
+import { Button } from "ui-latamwin";
 /**
  * Descripión.
  *
@@ -10,7 +10,7 @@ export default function page() {
         <>
             <div>
                 <div className="m-4">
-                    <ButtonBase
+                    <Button
                         intent="secondary"
                         variant="contained"
                         size="lg"
