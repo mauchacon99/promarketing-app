@@ -4,7 +4,7 @@ const classNameSecondaryContained = [
     // Styles when component is in state HOVER
     "hover:bg-accent-focus",
     // Styles when component is in state PRESS
-    "active:bg-accent-focus",
+    "pressed:bg-accent-focus",
     // Styles when component is in state DISABLED
     "disabled:text-neutral-content",
     "disabled:bg-accent-content",
@@ -18,8 +18,8 @@ const classNameSecondaryOutlined = [
     // Styles when component is in state HOVER
     "hover:bg-accent-content",
     // Styles when component is in state PRESS
-    "active:text-light",
-    "active:bg-accent-focus",
+    "pressed:text-light",
+    "pressed:bg-accent-focus",
     // Styles when component is in state DISABLED
     "disabled:border-neutral-content",
     "disabled:text-neutral-content",
@@ -31,8 +31,8 @@ const classNameSecondaryText = [
     // Styles when component is in state HOVER
     "hover:bg-accent-content",
     // Styles when component is in state PRESS
-    "active:bg-accent-focus",
-    "active:text-light",
+    "pressed:bg-accent-focus",
+    "pressed:text-light",
     // Styles when component is in state DISABLED
     "disabled:text-neutral-content",
     "disabled:bg-base-100",

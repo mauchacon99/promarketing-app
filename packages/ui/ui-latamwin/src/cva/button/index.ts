@@ -12,7 +12,7 @@ import {
 import { variantShadow } from "./variantShadow";
 import { variantSizes } from "./variantSize";
 
-const classNameDefault = ["py-[14px]", "font-roboto", "font-bold"];
+const classNameDefault = ["font-serif", "font-bold"];
 
 export const buttonCva = cva(classNameDefault, {
     variants: {

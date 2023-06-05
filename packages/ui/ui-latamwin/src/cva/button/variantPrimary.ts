@@ -3,8 +3,8 @@ const classNamePrimaryText = [
     // Styles when component is in state HOVER
     "hover:bg-primary-content",
     // Styles when component is in state PRESS
-    "active:bg-primary-focus",
-    "active:text-light",
+    "pressed:bg-primary-focus",
+    "pressed:text-light",
     // Styles when component is in state DISABLED
     "disabled:text-neutral-content",
     "disabled:bg-base-100",
@@ -18,8 +18,8 @@ const classNamePrimaryOutlined = [
     // Styles when component is in state HOVER
     "hover:bg-primary-content",
     // Styles when component is in state PRESS
-    "active:bg-primary-focus",
-    "active:text-light",
+    "pressed:bg-primary-focus",
+    "pressed:text-light",
     // Styles when component is in state DISABLED
     "disabled:bg-base-100",
     "disabled:text-neutral-content",
