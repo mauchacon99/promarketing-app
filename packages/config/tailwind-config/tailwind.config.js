@@ -1,4 +1,11 @@
+import plugin from "tailwindcss/plugin";
+
 module.exports = {
+    plugins: [
+        plugin(function ({ addVariant }) {
+            addVariant("pressed", "&:active");
+        }),
+    ],
     theme: {
         extend: {
             colors: {
@@ -46,8 +53,9 @@ module.exports = {
                 },
             },
             fontFamily: {
-                roboto: ["RobotoCondensed", "sans-serif"],
-                poppins: ["Poppins", "sans-serif"],
+                serif: ["ui-serif", "RobotoCondensed", "serif"],
+                slab: ["ui-slab-serif", "AlfaSlabOne", "slab-serif"],
+                sans: ["ui-sans-serif", "Poppins", "sans-serif"],
             },
             borderRadius: {
                 xs: "var(--radius-xs)",
