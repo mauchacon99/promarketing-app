@@ -1,2 +1,3 @@
 coverage
 turbo
+./turbo/generators/config.ts

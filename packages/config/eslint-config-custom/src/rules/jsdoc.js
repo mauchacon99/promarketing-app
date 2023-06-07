@@ -31,7 +31,6 @@ module.exports = {
         "jsdoc/match-description": "error",
         "jsdoc/newline-after-description": "error",
         "jsdoc/no-bad-blocks": "warn",
-        "jsdoc/no-types": "error",
         "jsdoc/require-description": "error",
         "jsdoc/require-description-complete-sentence": "error",
         "jsdoc/require-jsdoc": [
