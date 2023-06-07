@@ -4,7 +4,7 @@ export const classNameDefault = [
     "py-[15px]",
     "text-xs",
     "leading-[22px]",
- 
+
     "border",
     "rounded-xl",
     "outline-none",

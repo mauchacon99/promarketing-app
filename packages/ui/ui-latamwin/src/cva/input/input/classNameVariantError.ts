@@ -1,11 +1,11 @@
-export const variantSuccess = [
+export const classNameVariantError = [
     "text-neutral-content",
     "placeholder-neutral-content",
-    "border-success-content",
+    "border-error-content",
     // Styles when component is in state HOVER
-    "hover:border-success-content",
+    "hover:border-error-content",
     // Styles when component is in state FOCUSED
-    "focus:border-success-content",
+    "focus:border-error-content",
     // Styles when component is in state PRESS
-    "active:border-success-content",
+    "pressed:border-error-content",
 ];

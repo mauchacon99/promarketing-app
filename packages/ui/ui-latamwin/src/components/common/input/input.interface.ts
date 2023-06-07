@@ -7,6 +7,8 @@ export interface InputProps
         VariantProps<typeof inputCva> {
     /** Helper text. */
     helperText?: string;
+    /** Input Bottom Line.*/
+    hasBottomLine?: boolean;
     /** Represent value is loading.*/
     loading?: boolean;
 }

@@ -1,11 +1,11 @@
-export const variantError = [
+export const classNameVariantDefault = [
     "text-neutral-content",
     "placeholder-neutral-content",
-    "border-error-content",
+    "border-secondary-focus",
     // Styles when component is in state HOVER
-    "hover:border-error-content",
+    "hover:border-primary-focus",
     // Styles when component is in state FOCUSED
-    "focus:border-error-content",
+    "focus:border-primary-focus",
     // Styles when component is in state PRESS
-    "pressed:border-error-content",
+    "pressed:border-primary-focus",
 ];

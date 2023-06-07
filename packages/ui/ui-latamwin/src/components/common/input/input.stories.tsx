@@ -25,6 +25,7 @@ const argTypes: Partial<ArgTypes<InputProps>> = {
         control: { type: "radio" },
     },
     helperText: { type: "string" },
+    hasBottomLine: { type: "boolean" },
     disabled: { type: "boolean" },
 };
 
@@ -34,6 +35,7 @@ Default.argTypes = argTypes;
 Default.args = {
     variant: "default",
     placeholder: "Placeholder",
+    hasBottomLine: true,
 };
 
 export const Success = Template.bind({});
@@ -42,6 +44,7 @@ Success.argTypes = argTypes;
 Success.args = {
     variant: "success",
     placeholder: "Placeholder",
+    hasBottomLine: true,
 };
 
 export const Error = Template.bind({});
@@ -50,6 +53,7 @@ Error.argTypes = argTypes;
 Error.args = {
     variant: "error",
     placeholder: "Placeholder",
+    hasBottomLine: true,
 };
 
 export default StoryBookComponent;
