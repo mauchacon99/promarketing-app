@@ -12,16 +12,17 @@
     },
     "dependencies": {
         "@storybook/react": "^7.0.18",
-        "react": "^17.0.2",
-        "class-variance-authority": "^0.6.0"
+        "class-variance-authority": "^0.6.0",
+        "react": "^17.0.2"
     },
     "devDependencies": {
-        "class-variance-authority": "^0.6.0",
         "@types/react": "^18.2.0",
         "@types/react-dom": "^18.2.0",
+        "class-variance-authority": "^0.6.0",
         "eslint": "^7.32.0",
         "eslint-config-custom": "*",
         "postcss-import": "^15.1.0",
+        "react-icons": "^4.9.0",
         "tailwind-config": "*",
         "tailwindcss": "3.3.2",
         "tsconfig": "*",
