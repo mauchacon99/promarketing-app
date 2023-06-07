@@ -6,10 +6,9 @@
         "jsx": "react"
     },
     "rules": {
-        // Note: you must disable the base rule as it can report incorrect errors
         "indent": "off",
         "@typescript-eslint/indent": "error"
     },
-    "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.scss"],
-    "exclude": ["node_modules", "dist", "src/**/*.scss"]
+    "include": ["**/*.ts", "**/*.tsx", "**/*.scss"],
+    "exclude": ["node_modules", "dist"]
 }
