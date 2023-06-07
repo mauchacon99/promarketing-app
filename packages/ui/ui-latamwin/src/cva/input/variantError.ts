@@ -7,5 +7,5 @@ export const variantError = [
     // Styles when component is in state FOCUSED
     "focus:border-error-content",
     // Styles when component is in state PRESS
-    "active:border-error-content",
+    "pressed:border-error-content",
 ];
