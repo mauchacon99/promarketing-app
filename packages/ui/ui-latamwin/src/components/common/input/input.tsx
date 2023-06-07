@@ -21,7 +21,11 @@ const Input = (props: InputProps) => {
         helperText,
         className = "",
         variant,
+<<<<<<< HEAD
         hasBottomLine = false,
+=======
+				hasBottomLine = false
+>>>>>>> 1fe6d0f (chore: refactoring input)
     } = {
         ...defaultProps,
         ...props,
@@ -36,11 +40,15 @@ const Input = (props: InputProps) => {
      * @returns JSX.Element.
      */
     const BottomLine = () => {
+<<<<<<< HEAD
         return hasBottomLine ? (
             <span className={inputBottomLineCva({ variant })}></span>
         ) : (
             <></>
         );
+=======
+        return hasBottomLine ? <span className={inputBottomLineCva({ variant })}></span> : <></>
+>>>>>>> 1fe6d0f (chore: refactoring input)
     };
 
     /**
