@@ -20,7 +20,7 @@ export const buttonCva = cva(classNameDefault, {
             primary: [],
             secondary: [],
         },
-        variant: {
+        variety: {
             outlined: [],
             contained: [],
             text: [],
@@ -31,32 +31,32 @@ export const buttonCva = cva(classNameDefault, {
     compoundVariants: [
         {
             colorScheme: "primary",
-            variant: "contained",
+            variety: "contained",
             className: classNamePrimaryContained,
         },
         {
             colorScheme: "primary",
-            variant: "outlined",
+            variety: "outlined",
             className: classNamePrimaryOutlined,
         },
         {
             colorScheme: "primary",
-            variant: "text",
+            variety: "text",
             className: classNamePrimaryText,
         },
         {
             colorScheme: "secondary",
-            variant: "contained",
+            variety: "contained",
             className: classNameSecondaryContained,
         },
         {
             colorScheme: "secondary",
-            variant: "outlined",
+            variety: "outlined",
             className: classNameSecondaryOutlined,
         },
         {
             colorScheme: "secondary",
-            variant: "text",
+            variety: "text",
             className: classNameSecondaryText,
         },
     ],

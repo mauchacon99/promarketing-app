@@ -12,7 +12,7 @@ export default function page() {
                 <div className="m-4">
                     <Button
                         colorScheme="secondary"
-                        variant="contained"
+                        variety="contained"
                         size="lg"
                         shadow="md"
                         label={"Play"}
