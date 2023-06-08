@@ -24,7 +24,7 @@ const argTypes: Partial<ArgTypes<ButtonProps>> = {
         control: { type: "radio" },
         description: "Este es el button principal",
     },
-    variant: {
+    variety: {
         options: ["contained", "outlined", "text"],
         control: { type: "radio" },
     },
@@ -45,12 +45,12 @@ export const Primary = Template.bind({});
 Primary.argTypes = argTypes;
 Primary.args = {
     colorScheme: "primary",
-    variant: "contained",
+    variety: "contained",
 };
 export const Secondary = Template.bind({});
 Secondary.args = {
     colorScheme: "secondary",
-    variant: "contained",
+    variety: "contained",
 };
 
 Secondary.argTypes = argTypes;

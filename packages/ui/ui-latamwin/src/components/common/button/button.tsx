@@ -15,7 +15,7 @@ export const defaultProps: ButtonProps = {
  * @returns JSX.Element.
  */
 const Button = (props: ButtonProps) => {
-    const { label, shadow, colorScheme, className, size, variant } = {
+    const { label, shadow, colorScheme, className, size, variety } = {
         ...defaultProps,
         ...props,
     };
@@ -27,7 +27,7 @@ const Button = (props: ButtonProps) => {
                 colorScheme,
                 size,
                 className,
-                variant,
+                variety,
             })}
             {...props}
         >
