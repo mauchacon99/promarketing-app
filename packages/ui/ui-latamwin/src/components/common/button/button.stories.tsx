@@ -19,7 +19,7 @@ const Template: StoryFn<ButtonProps> = (props: ButtonProps) => {
 };
 
 const argTypes: Partial<ArgTypes<ButtonProps>> = {
-    intent: {
+    colorScheme: {
         options: ["primary", "secondary"],
         control: { type: "radio" },
         description: "Este es el button principal",
@@ -44,12 +44,12 @@ export const Primary = Template.bind({});
 
 Primary.argTypes = argTypes;
 Primary.args = {
-    intent: "primary",
+    colorScheme: "primary",
     variant: "contained",
 };
 export const Secondary = Template.bind({});
 Secondary.args = {
-    intent: "secondary",
+    colorScheme: "secondary",
     variant: "contained",
 };
 

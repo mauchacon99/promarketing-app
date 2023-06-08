@@ -11,7 +11,7 @@ export default function page() {
             <div>
                 <div className="m-4">
                     <Button
-                        intent="secondary"
+                        colorScheme="secondary"
                         variant="contained"
                         size="lg"
                         shadow="md"
