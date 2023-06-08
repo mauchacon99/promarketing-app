@@ -1,4 +1,4 @@
-export const variantShadow = {
+export const classNameVariantShadow = {
     sm: ["shadow-sm", "shadow-dark/25"],
     md: ["shadow-md", "shadow-dark/25"],
     lg: ["shadow-lg", "shadow-dark/25"],
