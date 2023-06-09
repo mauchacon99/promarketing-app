@@ -10,7 +10,7 @@ export interface InputProps
     /** Input Bottom Line.*/
     hasBottomLine?: boolean;
     /** Input Size.*/
-    componentSize?: "default" | "auto" | "full";
+    componentWidth?: "default" | "auto" | "full";
     /** Represent value is loading.*/
     loading?: boolean;
 }

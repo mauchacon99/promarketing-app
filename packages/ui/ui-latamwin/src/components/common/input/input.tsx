@@ -4,7 +4,7 @@ import {
     inputCva,
     inputHelperTextCva,
     inputBottomLineCva,
-    inputComponentSizeCva,
+    inputComponentWidthCva,
 } from "../../../cva/input";
 
 export const defaultProps: InputProps = {
@@ -23,7 +23,7 @@ const Input = (props: InputProps) => {
         className = "",
         variant,
         hasBottomLine = false,
-        componentSize = "default",
+        componentWidth = "default",
     } = {
         ...defaultProps,
         ...props,
@@ -64,7 +64,7 @@ const Input = (props: InputProps) => {
 
     return (
         <>
-            <div className={inputComponentSizeCva({ componentSize })}>
+            <div className={inputComponentWidthCva({ componentWidth })}>
                 <input
                     className={inputCva({
                         className,

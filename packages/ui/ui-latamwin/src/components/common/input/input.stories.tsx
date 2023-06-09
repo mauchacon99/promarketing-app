@@ -24,7 +24,7 @@ const argTypes: Partial<ArgTypes<InputProps>> = {
         options: ["default", "success", "error"],
         control: { type: "radio" },
     },
-    componentSize: {
+    componentWidth: {
         options: ["default", "auto", "full"],
         control: { type: "radio" },
     },
