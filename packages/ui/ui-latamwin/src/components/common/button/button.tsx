@@ -6,6 +6,7 @@ export const defaultProps: ButtonProps = {
     colorScheme: "primary",
     size: "md",
     label: "Text",
+    className: "",
 };
 
 /**
@@ -19,8 +20,8 @@ const Button = (props: ButtonProps) => {
         label,
         shadow,
         colorScheme,
-        className,
         size,
+        className,
         w = "default",
         variety,
     } = {
@@ -30,15 +31,15 @@ const Button = (props: ButtonProps) => {
 
     return (
         <button
+            {...props}
             className={buttonCva({
                 shadow,
                 colorScheme,
                 size,
                 w,
-                className,
                 variety,
+                className,
             })}
-            {...props}
         >
             {label}
         </button>

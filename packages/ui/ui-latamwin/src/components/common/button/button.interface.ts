@@ -7,8 +7,10 @@ export interface ButtonProps
         VariantProps<typeof buttonCva> {
     /** This text button. */
     label: string;
-    /** Button Size.*/
+    /** Button Size. */
     w?: "default" | "auto" | "full";
     /** Represent value is loading.*/
     loading?: boolean;
+    /** ClassName. */
+    className: string;
 }
