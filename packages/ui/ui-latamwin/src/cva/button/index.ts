@@ -25,6 +25,11 @@ export const buttonCva = cva(classNameDefault, {
             contained: [],
             text: [],
         },
+        componentWidth: {
+            default: [],
+            auto: "w-fit",
+            full: "w-full",
+        },
         size: classNameVariantSizes,
         shadow: classNameVariantShadow,
     },
@@ -58,6 +63,21 @@ export const buttonCva = cva(classNameDefault, {
             colorScheme: "secondary",
             variety: "text",
             className: classNameSecondaryText,
+        },
+        {
+            componentWidth: "default",
+            size: "sm",
+            className: "w-[72px]",
+        },
+        {
+            componentWidth: "default",
+            size: "md",
+            className: "w-[124px]",
+        },
+        {
+            componentWidth: "default",
+            size: "lg",
+            className: "w-[124px]",
         },
     ],
 });

@@ -32,6 +32,10 @@ const argTypes: Partial<ArgTypes<ButtonProps>> = {
         options: ["sm", "md", "lg"],
         control: { type: "radio" },
     },
+    componentWidth: {
+        options: ["default", "auto", "full"],
+        control: { type: "radio" },
+    },
     shadow: {
         defaultValue: "none",
         options: ["none", "sm", "md", "lg", "xl"],
