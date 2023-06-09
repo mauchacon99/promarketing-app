@@ -21,7 +21,7 @@ const Button = (props: ButtonProps) => {
         colorScheme,
         className,
         size,
-        componentWidth = "default",
+        w = "default",
         variety,
     } = {
         ...defaultProps,
@@ -34,7 +34,7 @@ const Button = (props: ButtonProps) => {
                 shadow,
                 colorScheme,
                 size,
-                componentWidth,
+                w,
                 className,
                 variety,
             })}

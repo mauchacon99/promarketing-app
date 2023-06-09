@@ -32,7 +32,7 @@ const argTypes: Partial<ArgTypes<ButtonProps>> = {
         options: ["sm", "md", "lg"],
         control: { type: "radio" },
     },
-    componentWidth: {
+    w: {
         options: ["default", "auto", "full"],
         control: { type: "radio" },
     },
