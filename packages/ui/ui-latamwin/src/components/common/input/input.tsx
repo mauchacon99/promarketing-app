@@ -4,6 +4,7 @@ import {
     inputCva,
     inputHelperTextCva,
     inputBottomLineCva,
+    inputComponentSizeCva,
 } from "../../../cva/input";
 
 export const defaultProps: InputProps = {
@@ -22,6 +23,7 @@ const Input = (props: InputProps) => {
         className = "",
         variant,
         hasBottomLine = false,
+        componentSize = "default",
     } = {
         ...defaultProps,
         ...props,
@@ -62,14 +64,15 @@ const Input = (props: InputProps) => {
 
     return (
         <>
-            <div className="relative w-fit">
-                <div className="relative overflow-hidden rounded-xl">
-                    <input
-                        className={inputCva({ className, variant })}
-                        {...props}
-                    />
-                    <BottomLine />
-                </div>
+            <div className={inputComponentSizeCva({ componentSize })}>
+                <input
+                    className={inputCva({
+                        className,
+                        variant,
+                    })}
+                    {...props}
+                />
+                <BottomLine />
             </div>
             <HelperText />
         </>

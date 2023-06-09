@@ -1,5 +1,6 @@
 export const classNameDefault = [
     // Styles of the component
+    "w-full",
     "px-3",
     "py-[15px]",
     "text-xs",

@@ -24,6 +24,10 @@ const argTypes: Partial<ArgTypes<InputProps>> = {
         options: ["default", "success", "error"],
         control: { type: "radio" },
     },
+    componentSize: {
+        options: ["default", "auto", "full"],
+        control: { type: "radio" },
+    },
     helperText: { type: "string" },
     hasBottomLine: { type: "boolean" },
     disabled: { type: "boolean" },
@@ -35,7 +39,6 @@ Default.argTypes = argTypes;
 Default.args = {
     variant: "default",
     placeholder: "Placeholder",
-    hasBottomLine: true,
 };
 
 export const Success = Template.bind({});

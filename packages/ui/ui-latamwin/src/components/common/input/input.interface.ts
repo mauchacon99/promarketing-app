@@ -9,6 +9,8 @@ export interface InputProps
     helperText?: string;
     /** Input Bottom Line.*/
     hasBottomLine?: boolean;
+    /** Input Size.*/
+    componentSize?: "default" | "auto" | "full";
     /** Represent value is loading.*/
     loading?: boolean;
 }
