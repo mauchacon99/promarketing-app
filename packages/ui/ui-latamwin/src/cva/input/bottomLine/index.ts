@@ -12,7 +12,7 @@ const classNameDefault = [
 
 export const inputBottomLineCva = cva(classNameDefault, {
     variants: {
-        variant: {
+        colorScheme: {
             default: [
                 "bg-secondary-focus",
                 "peer-hover:bg-primary-focus",

@@ -7,7 +7,7 @@ import { classNameVariantError } from "./classNameVariantError";
 
 export const inputCva = cva(classNameDefault, {
     variants: {
-        variant: {
+        colorScheme: {
             default: classNameVariantDefault,
             success: classNameVariantSuccess,
             error: classNameVariantError,

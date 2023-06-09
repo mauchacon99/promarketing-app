@@ -9,7 +9,7 @@ const classNameDefault = [
 
 export const inputHelperTextCva = cva(classNameDefault, {
     variants: {
-        variant: {
+        colorScheme: {
             default: [],
             success: "text-success-content",
             error: "text-error-content",

@@ -4,11 +4,11 @@ import {
     inputCva,
     inputHelperTextCva,
     inputBottomLineCva,
-    inputComponentWidthCva,
+    inputWCva,
 } from "../../../cva/input";
 
 export const defaultProps: InputProps = {
-    variant: "default",
+    colorScheme: "default",
 };
 
 /**
@@ -21,9 +21,9 @@ const Input = (props: InputProps) => {
     const {
         helperText,
         className = "",
-        variant,
+        colorScheme,
         hasBottomLine = false,
-        componentWidth = "default",
+        w = "default",
     } = {
         ...defaultProps,
         ...props,
@@ -33,13 +33,13 @@ const Input = (props: InputProps) => {
      * BottomLine.
      *
      * Input red bottom line as in Figma design.
-     * Uses variant prop as closure.
+     * Uses colorScheme prop as closure.
      *
      * @returns JSX.Element.
      */
     const BottomLine = () => {
         return hasBottomLine ? (
-            <span className={inputBottomLineCva({ variant })}></span>
+            <span className={inputBottomLineCva({ colorScheme })}></span>
         ) : (
             <></>
         );
@@ -48,13 +48,13 @@ const Input = (props: InputProps) => {
     /**
      * HelperText.
      *
-     * Uses className, variant, helperText props as closure.
+     * Uses className, colorScheme, helperText props as closure.
      *
      * @returns JSX.Element.
      */
     const HelperText = () => {
         return helperText ? (
-            <span className={inputHelperTextCva({ variant })}>
+            <span className={inputHelperTextCva({ colorScheme })}>
                 {helperText}
             </span>
         ) : (
@@ -64,11 +64,11 @@ const Input = (props: InputProps) => {
 
     return (
         <>
-            <div className={inputComponentWidthCva({ componentWidth })}>
+            <div className={inputWCva({ w })}>
                 <input
                     className={inputCva({
                         className,
-                        variant,
+                        colorScheme,
                     })}
                     {...props}
                 />

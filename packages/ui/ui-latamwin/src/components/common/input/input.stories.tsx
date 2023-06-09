@@ -20,11 +20,11 @@ const Template: StoryFn<InputProps> = (props: InputProps) => {
 
 const argTypes: Partial<ArgTypes<InputProps>> = {
     placeholder: { type: "string" },
-    variant: {
+    colorScheme: {
         options: ["default", "success", "error"],
         control: { type: "radio" },
     },
-    componentWidth: {
+    w: {
         options: ["default", "auto", "full"],
         control: { type: "radio" },
     },
@@ -37,7 +37,7 @@ export const Default = Template.bind({});
 
 Default.argTypes = argTypes;
 Default.args = {
-    variant: "default",
+    colorScheme: "default",
     placeholder: "Placeholder",
 };
 
@@ -45,7 +45,7 @@ export const Success = Template.bind({});
 
 Success.argTypes = argTypes;
 Success.args = {
-    variant: "success",
+    colorScheme: "success",
     placeholder: "Placeholder",
     hasBottomLine: true,
 };
@@ -54,7 +54,7 @@ export const Error = Template.bind({});
 
 Error.argTypes = argTypes;
 Error.args = {
-    variant: "error",
+    colorScheme: "error",
     placeholder: "Placeholder",
     hasBottomLine: true,
 };
