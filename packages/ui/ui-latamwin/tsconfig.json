@@ -10,11 +10,6 @@
         "indent": "off",
         "@typescript-eslint/indent": "error"
     },
-<<<<<<< HEAD
-    "include": ["**/*.ts", "**/*.tsx", "**/*.scss"],
- }
-=======
     "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.scss"],
     "exclude": ["node_modules", "dist", "src/**/*.scss"]
 }
->>>>>>> origin/development
