@@ -1,7 +1,7 @@
 "use client";
 import { Button } from "ui-latamwin";
 /**
- * Descripión.
+ * Page.
  *
  * @returns JSX.Element.
  */
