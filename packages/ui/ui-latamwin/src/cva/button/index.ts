@@ -65,7 +65,4 @@ export const buttonCva = cva(classNameDefault, {
             className: classNameSecondaryText,
         },
     ],
-    defaultVariants: {
-        size: "sm",
-    },
 });
