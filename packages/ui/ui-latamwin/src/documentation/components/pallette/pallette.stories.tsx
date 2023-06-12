@@ -4,7 +4,7 @@ import { PalletteProps } from "./pallette.interface";
 import Pallette from "./pallette";
 
 const storyBookComponent = {
-    title: "ElEMENTS/Pallette",
+    title: "DOCUMENTATION/Pallette Color",
     component: Pallette,
 } as Meta<PalletteProps>;
 

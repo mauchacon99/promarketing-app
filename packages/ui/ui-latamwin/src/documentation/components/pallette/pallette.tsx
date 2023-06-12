@@ -1,6 +1,6 @@
 import React from "react";
 import { PalletteProps } from "./pallette.interface";
-import { palletteCva } from "../../../cva/pallette";
+import { palletteCva } from "../../cva/pallette";
 
 /**
  * Pallette.
