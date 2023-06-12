@@ -7,7 +7,9 @@
             "outputs": [".next/**", "!.next/cache/**"],
             "env": ["SKIN"]
         },
-        "lint": {},
+        "lint": {
+            "cache": false
+        },
         "dev": {
             "cache": false,
             "persistent": true

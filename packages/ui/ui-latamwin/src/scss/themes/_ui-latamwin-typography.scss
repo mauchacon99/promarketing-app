@@ -6,19 +6,25 @@ html:root,
 }
 
 @font-face {
-    font-family: "AlfaSlabOne";
+    font-family: 'Poppins';
     font-weight: 400;
-    src: url("./../../../assets/fonts/AlfaSlabOne-Regular.ttf");
+    src: url('../../assets/fonts/Poppins-Regular.ttf');
 }
 
 @font-face {
-    font-family: "RobotoCondensed";
+    font-family: 'RobotoCondensed';
+    font-weight: 400;
+    src: url('../../assets/fonts/RobotoCondensed-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoCondensed';
     font-weight: 700;
-    src: url("./../../../assets/fonts/RobotoCondensed-Bold.ttf");
+    src: url('../../assets/fonts/RobotoCondensed-Bold.ttf');
 }
 
 @font-face {
-    font-family: "Poppins";
+    font-family: 'AlfaSlabOne';
     font-weight: 400;
-    src: url("./../../../assets/fonts/Poppins-Regular.ttf");
+    src: url('../../assets/fonts/AlfaSlabOne-Regular.ttf');
 }

@@ -4,24 +4,25 @@
     "main": "src",
     "license": "MIT",
     "scripts": {
-        "lint": "eslint \"**/*.ts*\"",
+        "lint": "tsc --noEmit && eslint \"**/*.ts*\"",
         "lint:fix": "eslint \"**/*.ts*\" --fix",
         "generate:component": "turbo gen react-component",
-        "format": "prettier --write \"**/*.{ts,tsx,js}\"",
-        "format:check": "prettier --check  \"**/*.{ts,tsx,js}\""
+        "format": "prettier --write \"**/*.{ts,tsx,js,json}\"",
+        "format:check": "prettier --check  \"**/*.{ts,tsx,js,json}\""
     },
     "dependencies": {
         "@storybook/react": "^7.0.18",
-        "react": "^17.0.2",
-        "class-variance-authority": "^0.6.0"
+        "class-variance-authority": "^0.6.0",
+        "react": "^17.0.2"
     },
     "devDependencies": {
-        "class-variance-authority": "^0.6.0",
         "@types/react": "^18.2.0",
         "@types/react-dom": "^18.2.0",
+        "class-variance-authority": "^0.6.0",
         "eslint": "^7.32.0",
         "eslint-config-custom": "*",
         "postcss-import": "^15.1.0",
+        "react-icons": "^4.9.0",
         "tailwind-config": "*",
         "tailwindcss": "3.3.2",
         "tsconfig": "*",

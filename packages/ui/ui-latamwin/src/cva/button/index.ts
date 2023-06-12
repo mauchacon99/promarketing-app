@@ -3,64 +3,66 @@ import {
     classNamePrimaryContained,
     classNamePrimaryOutlined,
     classNamePrimaryText,
-} from "./variantPrimary";
+} from "./compoundVariantsPrimary";
 import {
     classNameSecondaryContained,
     classNameSecondaryOutlined,
     classNameSecondaryText,
-} from "./variantSecondary";
-import { variantShadow } from "./variantShadow";
-import { variantSizes } from "./variantSize";
+} from "./compoundVariantsSecondary";
+import variantShadow from "./classNameVariantShadow";
+import variantSizes from "./classNameVariantSize";
 
 const classNameDefault = ["font-serif", "font-bold"];
 
 export const buttonCva = cva(classNameDefault, {
     variants: {
-        intent: {
+        colorScheme: {
             primary: [],
             secondary: [],
         },
-        size: variantSizes,
-        variant: {
+        variety: {
             outlined: [],
             contained: [],
             text: [],
         },
+        w: {
+            default: [],
+            auto: "w-fit",
+            full: "w-full",
+        },
         shadow: variantShadow,
+        size: variantSizes,
     },
     compoundVariants: [
         {
-            intent: "primary",
-            variant: "contained",
+            colorScheme: "primary",
+            variety: "contained",
             className: classNamePrimaryContained,
         },
         {
-            intent: "primary",
-            variant: "outlined",
+            colorScheme: "primary",
+            variety: "outlined",
             className: classNamePrimaryOutlined,
         },
         {
-            intent: "primary",
-            variant: "text",
+            colorScheme: "primary",
+            variety: "text",
             className: classNamePrimaryText,
         },
         {
-            intent: "secondary",
-            variant: "contained",
+            colorScheme: "secondary",
+            variety: "contained",
             className: classNameSecondaryContained,
         },
         {
-            intent: "secondary",
-            variant: "outlined",
+            colorScheme: "secondary",
+            variety: "outlined",
             className: classNameSecondaryOutlined,
         },
         {
-            intent: "secondary",
-            variant: "text",
+            colorScheme: "secondary",
+            variety: "text",
             className: classNameSecondaryText,
         },
     ],
-    defaultVariants: {
-        size: "sm",
-    },
 });

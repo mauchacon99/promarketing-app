@@ -3,7 +3,7 @@ import { ArgTypes, Meta, StoryFn } from "@storybook/react";
 import { ButtonProps } from "./button.interface";
 import Button from "./button";
 
-const StoryBookComponent = {
+const storyBookComponent = {
     title: "ElEMENTS/Button",
     component: Button,
 } as Meta<ButtonProps>;
@@ -19,17 +19,21 @@ const Template: StoryFn<ButtonProps> = (props: ButtonProps) => {
 };
 
 const argTypes: Partial<ArgTypes<ButtonProps>> = {
-    intent: {
+    colorScheme: {
         options: ["primary", "secondary"],
         control: { type: "radio" },
         description: "Este es el button principal",
     },
-    variant: {
+    variety: {
         options: ["contained", "outlined", "text"],
         control: { type: "radio" },
     },
     size: {
         options: ["sm", "md", "lg"],
+        control: { type: "radio" },
+    },
+    w: {
+        options: ["default", "auto", "full"],
         control: { type: "radio" },
     },
     shadow: {
@@ -44,15 +48,15 @@ export const Primary = Template.bind({});
 
 Primary.argTypes = argTypes;
 Primary.args = {
-    intent: "primary",
-    variant: "contained",
+    colorScheme: "primary",
+    variety: "contained",
 };
 export const Secondary = Template.bind({});
 Secondary.args = {
-    intent: "secondary",
-    variant: "contained",
+    colorScheme: "secondary",
+    variety: "contained",
 };
 
 Secondary.argTypes = argTypes;
 
-export default StoryBookComponent;
+export default storyBookComponent;
