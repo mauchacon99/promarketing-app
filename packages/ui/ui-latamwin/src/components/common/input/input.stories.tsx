@@ -3,7 +3,7 @@ import { ArgTypes, Meta, StoryFn } from "@storybook/react";
 import { InputProps } from "./input.interface";
 import Input from "./input";
 
-const StoryBookComponent = {
+const storyBookComponent = {
     title: "ElEMENTS/Input",
     component: Input,
 } as Meta<InputProps>;
@@ -59,4 +59,4 @@ Error.args = {
     hasBottomLine: true,
 };
 
-export default StoryBookComponent;
+export default storyBookComponent;
