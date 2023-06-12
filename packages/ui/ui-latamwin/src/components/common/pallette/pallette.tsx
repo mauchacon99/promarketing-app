@@ -7,12 +7,12 @@ export const defaultProps = {
 };
 
 /**
- * Pallete.
+ * Pallette.
  *
- * @param props - PalleteProps.
+ * @param props - PalletteProps.
  * @returns JSX.Element.
  */
-const Pallete = (props: PalletteProps) => {
+const Pallette = (props: PalletteProps) => {
     const { label, palletteItems } = {
         ...props,
     };
@@ -36,4 +36,4 @@ const Pallete = (props: PalletteProps) => {
     );
 };
 
-export default Pallete;
+export default Pallette;
