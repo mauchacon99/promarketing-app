@@ -2,10 +2,6 @@ import React from "react";
 import { PalletteProps } from "./pallette.interface";
 import { palletteCva } from "../../../cva/pallette";
 
-export const defaultProps = {
-    variant: "default",
-};
-
 /**
  * Pallette.
  *

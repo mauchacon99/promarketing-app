@@ -3,7 +3,7 @@ import { ArgTypes, Meta, StoryFn } from "@storybook/react";
 import { PalletteProps } from "./pallette.interface";
 import Pallette from "./pallette";
 
-const StoryBookComponent = {
+const storyBookComponent = {
     title: "ElEMENTS/Pallette",
     component: Pallette,
 } as Meta<PalletteProps>;
@@ -24,7 +24,7 @@ const Template: StoryFn<PalletteProps> = (props: PalletteProps) => {
     );
 };
 
-const argTypes: Partial<ArgTypes<PalletteProps>> = {};
+const argTypes: ArgTypes<Partial<PalletteProps>> = {};
 
 export const Primary = Template.bind({});
 
@@ -100,4 +100,4 @@ Reference.args = {
     label: "Pallette Reference Colors",
 };
 
-export default StoryBookComponent;
+export default storyBookComponent;
