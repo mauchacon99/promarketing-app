@@ -3,7 +3,7 @@ import { ButtonProps } from "./button.interface";
 import { buttonCva } from "../../../cva/button";
 
 export const defaultProps: ButtonProps = {
-    intent: "primary",
+    colorScheme: "primary",
     size: "md",
     label: "Text",
 };
@@ -15,14 +15,20 @@ export const defaultProps: ButtonProps = {
  * @returns JSX.Element.
  */
 const Button = (props: ButtonProps) => {
-    const { label, shadow, intent, className, size, variant } = {
+    const { label, shadow, colorScheme, className, size, variety } = {
         ...defaultProps,
         ...props,
     };
 
     return (
         <button
-            className={buttonCva({ shadow, intent, size, className, variant })}
+            className={buttonCva({
+                shadow,
+                colorScheme,
+                size,
+                className,
+                variety,
+            })}
             {...props}
         >
             {label}

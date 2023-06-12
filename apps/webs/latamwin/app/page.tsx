@@ -11,8 +11,8 @@ export default function page() {
             <div>
                 <div className="m-4">
                     <Button
-                        intent="secondary"
-                        variant="contained"
+                        colorScheme="secondary"
+                        variety="contained"
                         size="lg"
                         shadow="md"
                         label={"Play"}

@@ -1,4 +1,4 @@
-const classNamePrimaryText = [
+export const classNamePrimaryText = [
     "text-primary-default",
     // Styles when component is in state HOVER
     "hover:bg-primary-content",
@@ -10,7 +10,7 @@ const classNamePrimaryText = [
     "disabled:bg-base-100",
 ];
 
-const classNamePrimaryOutlined = [
+export const classNamePrimaryOutlined = [
     "bg-base-100",
     "text-primary-default",
     "border-2",
@@ -26,7 +26,7 @@ const classNamePrimaryOutlined = [
     "disabled:border-neutral-content",
 ];
 
-const classNamePrimaryContained = [
+export const classNamePrimaryContained = [
     "bg-primary-default",
     "text-light",
     // Styles when component is in state HOVER
@@ -35,9 +35,3 @@ const classNamePrimaryContained = [
     "disabled:bg-base-100",
     "disabled:text-neutral-content",
 ];
-
-export {
-    classNamePrimaryContained,
-    classNamePrimaryOutlined,
-    classNamePrimaryText,
-};
