@@ -3,7 +3,7 @@ import { ArgTypes, Meta, StoryFn } from "@storybook/react";
 import { ButtonProps } from "./button.interface";
 import Button from "./button";
 
-const StoryBookComponent = {
+const storyBookComponent = {
     title: "ElEMENTS/Button",
     component: Button,
 } as Meta<ButtonProps>;
@@ -59,4 +59,4 @@ Secondary.args = {
 
 Secondary.argTypes = argTypes;
 
-export default StoryBookComponent;
+export default storyBookComponent;
