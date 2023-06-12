@@ -1,16 +1,11 @@
 import { cva } from "class-variance-authority";
 
-const classNameDefault = [
-    "font-poppins",
-    "text-xs",
-    "leading-[22px]",
-    "text-neutral-content",
-];
+const classNameDefault = ["text-xs", "leading-[22px]"];
 
 export const inputHelperTextCva = cva(classNameDefault, {
     variants: {
         colorScheme: {
-            default: [],
+            default: "text-neutral-content",
             success: "text-success-content",
             error: "text-error-content",
         },

@@ -4,11 +4,14 @@ import {
     inputCva,
     inputHelperTextCva,
     inputBottomLineCva,
-    inputWCva,
+    inputWidthCva,
 } from "../../../cva/input";
 
 export const defaultProps: InputProps = {
     colorScheme: "default",
+    w: "default",
+    className: "",
+    hasBottomLine: false,
 };
 
 /**
@@ -20,10 +23,11 @@ export const defaultProps: InputProps = {
 const Input = (props: InputProps) => {
     const {
         helperText,
-        className = "",
+        className,
         colorScheme,
-        hasBottomLine = false,
-        w = "default",
+        hasBottomLine,
+        w: width,
+        ...rest
     } = {
         ...defaultProps,
         ...props,
@@ -38,10 +42,14 @@ const Input = (props: InputProps) => {
      * @returns JSX.Element.
      */
     const BottomLine = () => {
-        return hasBottomLine ? (
-            <span className={inputBottomLineCva({ colorScheme })}></span>
-        ) : (
-            <></>
+        return (
+            <>
+                {hasBottomLine && (
+                    <span
+                        className={inputBottomLineCva({ colorScheme })}
+                    ></span>
+                )}
+            </>
         );
     };
 
@@ -53,24 +61,26 @@ const Input = (props: InputProps) => {
      * @returns JSX.Element.
      */
     const HelperText = () => {
-        return helperText ? (
-            <span className={inputHelperTextCva({ colorScheme })}>
-                {helperText}
-            </span>
-        ) : (
-            <></>
+        return (
+            <>
+                {helperText && (
+                    <span className={inputHelperTextCva({ colorScheme })}>
+                        {helperText}
+                    </span>
+                )}
+            </>
         );
     };
 
     return (
         <>
-            <div className={inputWCva({ w })}>
+            <div className={inputWidthCva({ w: width })}>
                 <input
                     className={inputCva({
                         className,
                         colorScheme,
                     })}
-                    {...props}
+                    {...rest}
                 />
                 <BottomLine />
             </div>

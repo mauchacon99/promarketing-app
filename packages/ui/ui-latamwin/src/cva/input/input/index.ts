@@ -1,16 +1,10 @@
 import { cva } from "class-variance-authority";
 
 import { classNameDefault } from "./classNameDefault";
-import { classNameVariantDefault } from "./classNameVariantDefault";
-import { classNameVariantSuccess } from "./classNameVariantSuccess";
-import { classNameVariantError } from "./classNameVariantError";
+import classNameVariantColorScheme from "./classNameVariantsColorScheme";
 
 export const inputCva = cva(classNameDefault, {
     variants: {
-        colorScheme: {
-            default: classNameVariantDefault,
-            success: classNameVariantSuccess,
-            error: classNameVariantError,
-        },
+        colorScheme: classNameVariantColorScheme,
     },
 });

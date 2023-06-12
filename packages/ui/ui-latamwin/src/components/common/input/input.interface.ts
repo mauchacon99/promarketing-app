@@ -7,10 +7,13 @@ export interface InputProps
         VariantProps<typeof inputCva> {
     /** Input ColorScheme.*/
     colorScheme?: "default" | "success" | "error";
+
     /** Helper text. */
     helperText?: string;
+
     /** Input Bottom Line.*/
     hasBottomLine?: boolean;
+
     /** Input Width.*/
     w?: "default" | "auto" | "full";
     /** Represent value is loading.*/
