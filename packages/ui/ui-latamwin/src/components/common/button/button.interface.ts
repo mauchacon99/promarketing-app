@@ -12,5 +12,5 @@ export interface ButtonProps
     /** Represent value is loading.*/
     loading?: boolean;
     /** ClassName. */
-    className: string;
+    className?: string;
 }
