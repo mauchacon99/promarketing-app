@@ -6,13 +6,6 @@ module.exports = {
         project: [path.join(__dirname, "tsconfig.eslint.json")],
     },
     rules: {
-        "@typescript-eslint/naming-convention": [
-            "warn",
-            {
-                selector: "variable",
-                format: ["PascalCase", "camelCase"],
-            },
-        ],
         "@next/next/no-img-element": "off",
         "no-unused-vars": [
             "error",
@@ -21,4 +14,23 @@ module.exports = {
             },
         ],
     },
+    overrides: [
+        {
+            files: "**/*.+(tsx)",
+            rules: {
+                "@typescript-eslint/naming-convention": [
+                    "error",
+                    {
+                        selector: "variable",
+                        format: ["PascalCase", "camelCase"],
+                        types: ["function"],
+                    },
+                    {
+                        selector: "variable",
+                        format: ["camelCase"],
+                    },
+                ],
+            },
+        },
+    ],
 };

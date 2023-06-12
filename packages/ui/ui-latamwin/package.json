@@ -4,11 +4,11 @@
     "main": "src",
     "license": "MIT",
     "scripts": {
-        "lint": "eslint \"**/*.ts*\"",
+        "lint": "tsc --noEmit && eslint \"**/*.ts*\"",
         "lint:fix": "eslint \"**/*.ts*\" --fix",
         "generate:component": "turbo gen react-component",
-        "format": "prettier --write \"**/*.{ts,tsx,js,json}\"",
-        "format:check": "prettier --check  \"**/*.{ts,tsx,js,json}\""
+        "format": "prettier --write \"**/*.{ts,tsx,js}\"",
+        "format:check": "prettier --check  \"**/*.{ts,tsx,js}\""
     },
     "dependencies": {
         "@storybook/react": "^7.0.18",

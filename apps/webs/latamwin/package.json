@@ -6,7 +6,7 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint",
+        "lint": "tsc --noEmit --incremental false && next lint",
         "lint:fix": "prettier --write \"**/*.{ts,tsx,md,js}\" && eslint \"**/*.ts*\" --fix",
         "format": "prettier --write \"**/*.{ts,tsx,md,js}\"",
         "format:check": "prettier --check  \"**/*.{ts,tsx,md,js}\"",

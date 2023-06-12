@@ -9,7 +9,6 @@
         // the "parserOptions.project" error
         "./tsconfig.eslint.json",
         "./tsconfig.json",
-        ".eslintrc.cjs",
-        "./turbo/generators/config.ts"
+        ".eslintrc.cjs"
     ]
 }

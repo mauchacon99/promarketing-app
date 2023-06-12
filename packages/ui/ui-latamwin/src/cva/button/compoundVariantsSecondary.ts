@@ -1,4 +1,4 @@
-const classNameSecondaryContained = [
+export const classNameSecondaryContained = [
     "bg-accent-default",
     "text-primary-default",
     // Styles when component is in state HOVER
@@ -10,7 +10,7 @@ const classNameSecondaryContained = [
     "disabled:bg-accent-content",
 ];
 
-const classNameSecondaryOutlined = [
+export const classNameSecondaryOutlined = [
     "bg-base-100",
     "text-accent-default",
     "border-2",
@@ -26,7 +26,7 @@ const classNameSecondaryOutlined = [
     "disabled:bg-base-100",
 ];
 
-const classNameSecondaryText = [
+export const classNameSecondaryText = [
     "text-accent-default",
     // Styles when component is in state HOVER
     "hover:bg-accent-content",
@@ -37,9 +37,3 @@ const classNameSecondaryText = [
     "disabled:text-neutral-content",
     "disabled:bg-base-100",
 ];
-
-export {
-    classNameSecondaryContained,
-    classNameSecondaryText,
-    classNameSecondaryOutlined,
-};

@@ -4,6 +4,7 @@
         "build": "turbo run build",
         "dev": "turbo run dev",
         "lint": "turbo run lint",
+        "lint:fix": "turbo run lint:fix",
         "format": "prettier --write \"**/*.{ts,tsx,md,js,json}\"",
         "format:check": "prettier --check  \"**/*.{ts,tsx,md,js,json}\"",
         "prepare": "husky install"
@@ -11,7 +12,6 @@
     "devDependencies": {
         "@commitlint/config-conventional": "^17.6.5",
         "@turbo/gen": "^1.9.7",
-        "commitlint": "^17.6.5",
         "eslint": "7.27.0",
         "eslint-config-custom": "0.0.0",
         "husky": "^8.0.3",
