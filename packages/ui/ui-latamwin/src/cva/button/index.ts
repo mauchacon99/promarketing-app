@@ -9,8 +9,8 @@ import {
     classNameSecondaryOutlined,
     classNameSecondaryText,
 } from "./compoundVariantsSecondary";
-import { classNameVariantShadow } from "./classNameVariantShadow";
-import { classNameVariantSizes } from "./classNameVariantSize";
+import variantShadow from "./classNameVariantShadow";
+import variantSizes from "./classNameVariantSize";
 
 const classNameDefault = ["font-serif", "font-bold"];
 
@@ -25,8 +25,13 @@ export const buttonCva = cva(classNameDefault, {
             contained: [],
             text: [],
         },
-        size: classNameVariantSizes,
-        shadow: classNameVariantShadow,
+        w: {
+            default: [],
+            auto: "w-fit",
+            full: "w-full",
+        },
+        shadow: variantShadow,
+        size: variantSizes,
     },
     compoundVariants: [
         {
