@@ -1,5 +1,7 @@
-"use client";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "ui-latamwin";
+
 /**
  * Page.
  *
@@ -10,6 +12,11 @@ export default function page() {
         <>
             <div>
                 <div className="m-4">
+                    <FontAwesomeIcon
+                        icon={faCoffee}
+                        size="2xl"
+                        className="text-primary-default"
+                    />
                     <Button
                         colorScheme="secondary"
                         variety="contained"
