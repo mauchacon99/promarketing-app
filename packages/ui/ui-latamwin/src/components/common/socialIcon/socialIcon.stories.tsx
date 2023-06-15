@@ -2,10 +2,12 @@ import React from "react";
 import { ArgTypes, Meta, StoryFn } from "@storybook/react";
 import { SocialIconProps } from "./socialIcon.interface";
 import SocialIcon from "./socialIcon";
-import IconGoogle from "../../../assets/icons/socialIcons/iconGoogle";
-import IconFacebook from "../../../assets/icons/socialIcons/iconFacebook";
-import IconTiktok from "../../../assets/icons/socialIcons/iconTiktok";
-import IconTwitter from "../../../assets/icons/socialIcons/iconTwitter";
+import {
+    IconGoogle,
+    IconFacebook,
+    IconTiktok,
+    IconTwitter,
+} from "../../../assets/icons/socialIcons/index";
 
 const storyBookComponent = {
     title: "ElEMENTS/Social Icon",

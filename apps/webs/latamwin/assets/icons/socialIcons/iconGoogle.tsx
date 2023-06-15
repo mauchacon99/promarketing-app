@@ -1,12 +1,12 @@
 import * as React from "react";
 import { SVGProps } from "react";
 /**
- * SvgComponent.
+ * IconGoogle.
  *
  * @param props SVGProps<SVGSVGElement>.
  * @returns SVG.
  */
-const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
+const IconGoogle = (props: SVGProps<SVGSVGElement>) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -32,4 +32,4 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
         </defs>
     </svg>
 );
-export default SvgComponent;
+export default IconGoogle;
