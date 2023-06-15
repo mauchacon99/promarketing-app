@@ -5,10 +5,10 @@ import {
     classNamePrimaryText,
 } from "./compoundVariantsPrimary";
 import {
-    classNameSecondaryContained,
-    classNameSecondaryOutlined,
-    classNameSecondaryText,
-} from "./compoundVariantsSecondary";
+    classNameAccentContained,
+    classNameAccentOutlined,
+    classNameAccentText,
+} from "./compoundVariantsAccent";
 import variantShadow from "./classNameVariantShadow";
 import variantSizes from "./classNameVariantSize";
 
@@ -18,7 +18,7 @@ export const buttonCva = cva(classNameDefault, {
     variants: {
         colorScheme: {
             primary: [],
-            secondary: [],
+            accent: [],
         },
         variety: {
             outlined: [],
@@ -50,19 +50,19 @@ export const buttonCva = cva(classNameDefault, {
             className: classNamePrimaryText,
         },
         {
-            colorScheme: "secondary",
+            colorScheme: "accent",
             variety: "contained",
-            className: classNameSecondaryContained,
+            className: classNameAccentContained,
         },
         {
-            colorScheme: "secondary",
+            colorScheme: "accent",
             variety: "outlined",
-            className: classNameSecondaryOutlined,
+            className: classNameAccentOutlined,
         },
         {
-            colorScheme: "secondary",
+            colorScheme: "accent",
             variety: "text",
-            className: classNameSecondaryText,
+            className: classNameAccentText,
         },
     ],
 });

@@ -35,8 +35,9 @@ const classNameLight = [
     "disabled:bg-base-100",
 ];
 
-export default {
+const classNameVariantColorScheme = {
     primary: classNamePrimary,
     accent: classNameAccent,
     light: classNameLight,
 };
+export default classNameVariantColorScheme;
