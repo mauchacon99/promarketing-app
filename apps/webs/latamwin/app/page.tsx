@@ -1,7 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+"use client";
 import { Button } from "ui-latamwin";
-
 /**
  * Page.
  *
@@ -12,18 +10,14 @@ export default function page() {
         <>
             <div>
                 <div className="m-4">
-                    <FontAwesomeIcon
-                        icon={faCoffee}
-                        size="2xl"
-                        className="text-primary-default"
-                    />
                     <Button
-                        colorScheme="secondary"
+                        colorScheme="accent"
                         variety="contained"
                         size="lg"
                         shadow="md"
-                        label={"Play"}
-                    />
+                    >
+                        Play
+                    </Button>
                 </div>
             </div>
         </>
