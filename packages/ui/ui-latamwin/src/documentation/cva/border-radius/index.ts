@@ -4,10 +4,10 @@ const classNameDefaultProps = [
     "flex",
     "items-center",
     "justify-center",
-    "w-[134px]",
+    "w-full",
     "h-[61px]",
-    "bg-primary-default",
-    "text-white",
+    "bg-primary-content",
+    "text-primary",
     "shadow-sm",
 ];
 

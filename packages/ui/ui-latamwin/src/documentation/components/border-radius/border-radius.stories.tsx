@@ -1,7 +1,7 @@
 import React from "react";
 import { ArgTypes, Meta, StoryFn } from "@storybook/react";
-import { BorderRadiusProps } from "./borderRadius.interface";
-import BorderRadius from "./borderRadius";
+import { BorderRadiusProps } from "./border-radius.interface";
+import BorderRadius from "./border-radius";
 
 const storyBookComponent = {
     title: "DOCUMENTATION/Border Radius",
