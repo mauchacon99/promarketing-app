@@ -30,6 +30,10 @@ module.exports = {
                         format: ["camelCase"],
                     },
                 ],
+                "max-len": [
+                    "error",
+                    { ignoreTemplateLiterals: true, ignoreStrings: true },
+                ],
             },
         },
     ],
