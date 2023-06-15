@@ -2,7 +2,8 @@ import React from "react";
 import { ArgTypes, Meta, StoryFn } from "@storybook/react";
 import { ButtonProps } from "./button.interface";
 import Button from "./button";
-import IconChevronDown from "../../../assets/icons/icon-chevron-down";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const storyBookComponent = {
     title: "ElEMENTS/Button",
@@ -71,10 +72,10 @@ ChevronLight.args = {
     w: "auto",
     className: "px-[32px] py-[14px] rounded-[14px]",
     children: (
-        <IconChevronDown
+        <FontAwesomeIcon
+            icon={faChevronDown}
+            size="1x"
             className="text-light"
-            width={"20px"}
-            height={"11.43px"}
         />
     ),
 };
