@@ -2,7 +2,7 @@ import React from "react";
 import { ArgTypes, Meta, StoryFn } from "@storybook/react";
 import { ButtonProps } from "./button.interface";
 import Button from "./button";
-import IconChevronDown from "../../../assets/icons/iconChevronDown";
+import IconChevronDown from "../../../assets/icons/icon-chevron-down";
 
 const storyBookComponent = {
     title: "ElEMENTS/Button",
@@ -22,9 +22,8 @@ const Template: StoryFn<ButtonProps> = (props: ButtonProps) => {
 const argTypes: Partial<ArgTypes<ButtonProps>> = {
     children: { type: "string" },
     colorScheme: {
-        options: ["primary", "secondary"],
+        options: ["primary", "accent"],
         control: { type: "radio" },
-        description: "Este es el button principal",
     },
     variety: {
         options: ["contained", "outlined", "text"],
@@ -54,25 +53,29 @@ Primary.args = {
     variety: "contained",
 };
 
-export const Secondary = Template.bind({});
+export const Accent = Template.bind({});
 
-Secondary.argTypes = argTypes;
-Secondary.args = {
-    colorScheme: "secondary",
+Accent.argTypes = argTypes;
+Accent.args = {
+    colorScheme: "accent",
     variety: "contained",
 };
 
-export const ChevronWhite = Template.bind({});
+export const ChevronLight = Template.bind({});
 
-ChevronWhite.argTypes = argTypes;
-ChevronWhite.args = {
-    colorScheme: "secondary",
+ChevronLight.argTypes = argTypes;
+ChevronLight.args = {
+    colorScheme: "accent",
     variety: "contained",
     size: "md",
     w: "auto",
     className: "px-[32px] py-[14px] rounded-[14px]",
     children: (
-        <IconChevronDown color="white" width={"20px"} height={"11.43px"} />
+        <IconChevronDown
+            className="text-light"
+            width={"20px"}
+            height={"11.43px"}
+        />
     ),
 };
 
