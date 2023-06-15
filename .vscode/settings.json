@@ -1,5 +1,5 @@
 {
-    "cSpell.words": ["latamwin", "promarketing", "roboto"],
+    "cSpell.words": ["latamwin", "promarketing", "roboto", "testid"],
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },

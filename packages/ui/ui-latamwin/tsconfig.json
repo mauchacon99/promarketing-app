@@ -1,8 +1,12 @@
 {
     "extends": "tsconfig/react-library.json",
     "compilerOptions": {
-        "baseUrl": "./",
-        "types": ["@types/node"],
+        "paths": {
+            "@cva/*": ["cva/*"],
+            "@components/*": ["components/*"]
+        },
+        "baseUrl": "src",
+        "types": ["@types/node", "jest"],
         "jsx": "react"
     },
     "rules": {

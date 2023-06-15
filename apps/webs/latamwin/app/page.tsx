@@ -22,8 +22,9 @@ export default function page() {
                         variety="contained"
                         size="lg"
                         shadow="md"
-                        label={"Play"}
-                    />
+                    >
+                        Play
+                    </Button>
                 </div>
             </div>
         </>
