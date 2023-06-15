@@ -70,7 +70,7 @@ ChevronLight.args = {
     variety: "contained",
     size: "md",
     w: "auto",
-    className: "px-[32px] py-[14px] rounded-[14px]",
+    className: "px-[32px] rounded-[14px]",
     children: (
         <FontAwesomeIcon
             icon={faChevronDown}
