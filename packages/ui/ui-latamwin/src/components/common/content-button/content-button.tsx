@@ -1,10 +1,10 @@
 import React from "react";
-import { ContentButtonProps } from "./contentButton.interface";
-import { contentButtonCva } from "../../../cva/contentButton";
-import IconBall from "../../../assets/icons/iconBall";
+import { ContentButtonProps } from "./content-button.interface";
+import { contentButtonCva } from "../../../cva/content-button";
+import IconBall from "../../../assets/icons/icon-ball";
 
 export const defaultProps: ContentButtonProps = {
-    colorScheme: "yellow",
+    colorScheme: "accent",
     hasIcon: true,
     iconPlacement: "left",
     buttonIcon: <IconBall width={"20px"} height={"20px"} />,

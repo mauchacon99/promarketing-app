@@ -1,7 +1,7 @@
 import React from "react";
 import { ArgTypes, Meta, StoryFn } from "@storybook/react";
-import { ContentButtonProps } from "./contentButton.interface";
-import ContentButton from "./contentButton";
+import { ContentButtonProps } from "./content-button.interface";
+import ContentButton from "./content-button";
 
 const storyBookComponent = {
     title: "ElEMENTS/Content Button",
@@ -20,44 +20,42 @@ const Template: StoryFn<ContentButtonProps> = (props: ContentButtonProps) => {
 
 const argTypes: Partial<ArgTypes<ContentButtonProps>> = {
     colorScheme: {
-        options: ["blue", "danger", "yellow", "gray"],
+        options: ["primary", "error", "accent", "neutral"],
         control: { type: "radio" },
-        description: "Este es el button principal",
     },
     hasIcon: { type: "boolean" },
     iconPlacement: {
         options: ["left", "right"],
         control: { type: "radio" },
     },
-    disabled: { type: "boolean" },
 };
 
-export const Blue = Template.bind({});
+export const Primary = Template.bind({});
 
-Blue.argTypes = argTypes;
-Blue.args = {
-    colorScheme: "blue",
+Primary.argTypes = argTypes;
+Primary.args = {
+    colorScheme: "primary",
 };
 
-export const Danger = Template.bind({});
+export const Error = Template.bind({});
 
-Danger.argTypes = argTypes;
-Danger.args = {
-    colorScheme: "danger",
+Error.argTypes = argTypes;
+Error.args = {
+    colorScheme: "error",
 };
 
-export const Yellow = Template.bind({});
+export const Accent = Template.bind({});
 
-Yellow.argTypes = argTypes;
-Yellow.args = {
-    colorScheme: "yellow",
+Accent.argTypes = argTypes;
+Accent.args = {
+    colorScheme: "accent",
 };
 
-export const Gray = Template.bind({});
+export const Neutral = Template.bind({});
 
-Gray.argTypes = argTypes;
-Gray.args = {
-    colorScheme: "gray",
+Neutral.argTypes = argTypes;
+Neutral.args = {
+    colorScheme: "neutral",
 };
 
 export default storyBookComponent;

@@ -1,9 +1,13 @@
-/* eslint-disable jsdoc/require-jsdoc */
-/* eslint-disable jsdoc/require-description */
-/* eslint-disable max-len */
 import * as React from "react";
 import { SVGProps } from "react";
-const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
+
+/**
+ * Icon ball, This icon will be used to test in storybook .
+ *
+ * @param props - ContentButtonProps.
+ * @returns JSX.Element.
+ */
+const IconBall = (props: SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" {...props}>
         <path
             fill="currentColor"
@@ -11,4 +15,4 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
         />
     </svg>
 );
-export default SvgComponent;
+export default IconBall;

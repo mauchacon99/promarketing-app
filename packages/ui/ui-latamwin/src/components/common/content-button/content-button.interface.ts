@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes } from "react";
 import { type VariantProps } from "class-variance-authority";
-import { contentButtonCva } from "./../../../cva/contentButton";
+import { contentButtonCva } from "../../../cva/content-button";
 
 export interface ContentButtonProps
     extends ButtonHTMLAttributes<HTMLButtonElement>,
