@@ -1,4 +1,4 @@
-export const classNamePrimary = [
+const classNamePrimary = [
     "bg-primary-default",
     "text-light",
     // Styles when component is in state HOVER
@@ -10,7 +10,7 @@ export const classNamePrimary = [
     "disabled:text-neutral-content",
 ];
 
-export const classNameSecondary = [
+const classNameAccent = [
     "bg-accent-default",
     "text-primary-default",
     // Styles when component is in state HOVER
@@ -22,8 +22,8 @@ export const classNameSecondary = [
     "disabled:bg-accent-content",
 ];
 
-export const classNameWhite = [
-    "bg-white",
+const classNameLight = [
+    "bg-light",
     "text-primary-default",
     // Styles when component is in state HOVER
     "hover:bg-primary-content",
@@ -34,3 +34,9 @@ export const classNameWhite = [
     "disabled:text-neutral-content",
     "disabled:bg-base-100",
 ];
+
+export default {
+    primary: classNamePrimary,
+    accent: classNameAccent,
+    light: classNameLight,
+};

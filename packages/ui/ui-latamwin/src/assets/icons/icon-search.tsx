@@ -1,9 +1,12 @@
-/* eslint-disable jsdoc/require-jsdoc */
-/* eslint-disable jsdoc/require-description */
-/* eslint-disable max-len */
 import * as React from "react";
 import { SVGProps } from "react";
-const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
+/**
+ * IconSearch, example for storybook.
+ *
+ * @param props - IconSearch props.
+ * @returns JSX.Element.
+ */
+const IconSearch = (props: SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" {...props}>
         <path
             fill="currentColor"
@@ -11,4 +14,4 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
         />
     </svg>
 );
-export default SvgComponent;
+export default IconSearch;

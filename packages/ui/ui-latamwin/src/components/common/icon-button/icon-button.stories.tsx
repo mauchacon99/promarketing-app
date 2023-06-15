@@ -1,7 +1,7 @@
 import React from "react";
 import { ArgTypes, Meta, StoryFn } from "@storybook/react";
-import { IconButtonProps } from "./iconButton.interface";
-import IconButton from "./iconButton";
+import { IconButtonProps } from "./icon-button.interface";
+import IconButton from "./icon-button";
 
 const storyBookComponent = {
     title: "ElEMENTS/IconButton",
@@ -20,9 +20,8 @@ const Template: StoryFn<IconButtonProps> = (props: IconButtonProps) => {
 
 const argTypes: Partial<ArgTypes<IconButtonProps>> = {
     colorScheme: {
-        options: ["primary", "secondary", "white"],
+        options: ["primary", "accent", "light"],
         control: { type: "radio" },
-        description: "Este es el button principal",
     },
     shadow: {
         defaultValue: "md",
@@ -39,18 +38,18 @@ Primary.args = {
     colorScheme: "primary",
 };
 
-export const Secondary = Template.bind({});
+export const Accent = Template.bind({});
 
-Secondary.argTypes = argTypes;
-Secondary.args = {
-    colorScheme: "secondary",
+Accent.argTypes = argTypes;
+Accent.args = {
+    colorScheme: "accent",
 };
 
-export const White = Template.bind({});
+export const Light = Template.bind({});
 
-White.argTypes = argTypes;
-White.args = {
-    colorScheme: "white",
+Light.argTypes = argTypes;
+Light.args = {
+    colorScheme: "light",
 };
 
 export default storyBookComponent;

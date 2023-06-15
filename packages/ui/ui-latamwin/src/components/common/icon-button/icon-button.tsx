@@ -1,7 +1,7 @@
 import React from "react";
-import { IconButtonProps } from "./iconButton.interface";
-import { iconButtonCva } from "../../../cva/iconButton";
-import IconSearch from "../../../assets/icons/iconSearch";
+import { IconButtonProps } from "./icon-button.interface";
+import { iconButtonCva } from "../../../cva/icon-button";
+import IconSearch from "../../../assets/icons/icon-search";
 
 export const defaultProps: IconButtonProps = {
     colorScheme: "primary",
