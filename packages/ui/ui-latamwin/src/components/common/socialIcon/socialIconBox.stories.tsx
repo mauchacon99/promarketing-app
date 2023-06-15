@@ -1,7 +1,7 @@
 import React from "react";
 import { ArgTypes, Meta, StoryFn } from "@storybook/react";
-import { SocialIconProps } from "./socialIcon.interface";
-import SocialIcon from "./socialIcon";
+import { SocialIconBoxProps } from "./socialIconBox.interface";
+import SocialIconBox from "./socialIconBox";
 import {
     IconGoogle,
     IconFacebook,
@@ -10,9 +10,9 @@ import {
 } from "../../../assets/icons/socialIcons/index";
 
 const storyBookComponent = {
-    title: "ElEMENTS/Social Icon",
-    component: SocialIcon,
-} as Meta<SocialIconProps>;
+    title: "ElEMENTS/Social Icon Box",
+    component: SocialIconBox,
+} as Meta<SocialIconBoxProps>;
 
 /**
  * Template.
@@ -20,11 +20,11 @@ const storyBookComponent = {
  * @param props Props this component.
  * @returns JSX.Element.
  */
-const Template: StoryFn<SocialIconProps> = (props: SocialIconProps) => {
-    return <SocialIcon {...props} />;
+const Template: StoryFn<SocialIconBoxProps> = (props: SocialIconBoxProps) => {
+    return <SocialIconBox {...props} />;
 };
 
-const argTypes: Partial<ArgTypes<SocialIconProps>> = {
+const argTypes: Partial<ArgTypes<SocialIconBoxProps>> = {
     disabled: { type: "boolean" },
 };
 

@@ -10,4 +10,4 @@ const classNameDefault = [
     "rounded-full",
 ];
 
-export const socialIconCva = cva(classNameDefault);
+export const socialIconBoxCva = cva(classNameDefault);

@@ -1,1 +1,1 @@
-export { default as SocialIcon } from "./socialIcon";
+export { default as SocialIconBox } from "./socialIconBox";

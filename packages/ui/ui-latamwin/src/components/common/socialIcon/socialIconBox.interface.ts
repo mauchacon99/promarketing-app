@@ -1,10 +1,10 @@
 import { ButtonHTMLAttributes } from "react";
 import { type VariantProps } from "class-variance-authority";
-import { socialIconCva } from "../../../cva/socialIcon";
+import { socialIconBoxCva } from "../../../cva/socialIconBox";
 
-export interface SocialIconProps
+export interface SocialIconBoxProps
     extends ButtonHTMLAttributes<HTMLButtonElement>,
-        VariantProps<typeof socialIconCva> {
+        VariantProps<typeof socialIconBoxCva> {
     /** ClassName. */
     className?: string;
 }
