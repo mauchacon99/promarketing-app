@@ -1,11 +1,12 @@
 import React from "react";
 import { IconButtonProps } from "./icon-button.interface";
 import { iconButtonCva } from "../../../cva/icon-button";
-import IconSearch from "../../../assets/icons/icon-search";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 export const defaultProps: IconButtonProps = {
     colorScheme: "primary",
-    children: <IconSearch width={"20px"} height={"20px"} />,
+    children: <FontAwesomeIcon icon={faSearch} size="lg" />,
     className: "",
     shadow: "md",
 };
