@@ -1,7 +1,7 @@
 import React from "react";
 import { ArgTypes, Meta, StoryFn } from "@storybook/react";
-import { SocialIconBoxProps } from "./socialIconBox.interface";
-import SocialIconBox from "./socialIconBox";
+import { SocialIconBoxProps } from "./social-icon-box.interface";
+import SocialIconBox from "./social-icon-box";
 import {
     IconGoogle,
     IconFacebook,

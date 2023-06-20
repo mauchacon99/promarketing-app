@@ -1,6 +1,6 @@
 import React from "react";
-import { SocialIconBoxProps } from "./socialIconBox.interface";
-import { socialIconBoxCva } from "../../../cva/socialIconBox";
+import { SocialIconBoxProps } from "./social-icon-box.interface";
+import { socialIconBoxCva } from "../../../cva/social-icon-box";
 
 /**
  * SocialIconBox.
