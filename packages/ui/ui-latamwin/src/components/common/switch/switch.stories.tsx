@@ -19,6 +19,10 @@ const Template: StoryFn<SwitchProps> = (props: SwitchProps) => {
 };
 
 const argTypes: Partial<ArgTypes<SwitchProps>> = {
+    colorScheme: {
+        options: ["accent"],
+        control: { type: "radio" },
+    },
     defaultValue: { type: "boolean" },
     isDisabled: { type: "boolean" },
     size: {
@@ -32,6 +36,7 @@ export const On = Template.bind({});
 On.argTypes = argTypes;
 On.args = {
     defaultValue: true,
+    colorScheme: "accent",
 };
 
 export const Off = Template.bind({});
@@ -39,5 +44,6 @@ export const Off = Template.bind({});
 Off.argTypes = argTypes;
 Off.args = {
     defaultValue: false,
+    colorScheme: "accent",
 };
 export default storyBookComponent;

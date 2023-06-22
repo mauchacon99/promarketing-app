@@ -5,8 +5,6 @@ import { switchCva } from "../../../cva/switch";
 export const defaultProps: SwitchProps = {
     defaultValue: false,
     isDisabled: false,
-    /** Default ColorScheme.*/
-    colorScheme: "accent",
 };
 
 /**
@@ -21,7 +19,6 @@ const Switch = (props: SwitchProps) => {
         ...props,
     };
 
-    const switchColorScheme = defaultValue ? colorScheme : "light";
     return (
         <label className="relative inline-flex cursor-pointer items-center">
             <input
@@ -32,7 +29,11 @@ const Switch = (props: SwitchProps) => {
                 {...rest}
             />
 
-            <div className={switchCva({ switchColorScheme })}></div>
+            <div
+                className={switchCva({
+                    colorScheme: defaultValue ? colorScheme : "light",
+                })}
+            ></div>
         </label>
     );
 };

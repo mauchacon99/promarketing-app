@@ -10,8 +10,6 @@ type HTMLInputProps = Omit<
 export interface SwitchProps
     extends HTMLInputProps,
         VariantProps<typeof switchCva> {
-    /** Default ColorScheme of the component.*/
-    colorScheme: "accent" | "light";
     /** Default value of the component.*/
     defaultValue?: boolean;
     /** Disabled value of the component.*/

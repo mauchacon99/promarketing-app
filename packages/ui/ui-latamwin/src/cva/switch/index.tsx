@@ -5,6 +5,6 @@ import variantColorScheme from "./classNameVariantColorScheme";
 
 export const switchCva = cva(classNameDefault, {
     variants: {
-        switchColorScheme: variantColorScheme,
+        colorScheme: variantColorScheme,
     },
 });
