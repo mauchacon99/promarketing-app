@@ -19,9 +19,7 @@ const Template: StoryFn<RadioProps> = (props: RadioProps) => {
 };
 
 const argTypes: Partial<ArgTypes<RadioProps>> = {
-    defaultChecked: { type: "boolean" },
     checked: { type: "boolean" },
-    disabled: { type: "boolean" },
     colorScheme: {
         options: ["accent", "light"],
         control: { type: "radio" },
@@ -30,6 +28,7 @@ const argTypes: Partial<ArgTypes<RadioProps>> = {
         options: ["left", "right"],
         control: { type: "radio" },
     },
+    disabled: { type: "boolean" },
 };
 
 export const On = Template.bind({});

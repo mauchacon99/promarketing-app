@@ -4,7 +4,6 @@ import { radioCva } from "../../../cva/radio";
 
 export const defaultProps: RadioProps = {
     children: <>label</>,
-    value: "default",
     labelPlacement: "right",
 };
 
@@ -15,31 +14,19 @@ export const defaultProps: RadioProps = {
  * @returns JSX.Element.
  */
 const Radio = (props: RadioProps) => {
-    const {
-        children,
-        value,
-        defaultChecked,
-        checked,
-        disabled,
-        colorScheme,
-        labelPlacement,
-        ...rest
-    } = {
+    const { children, checked, colorScheme, labelPlacement, ...rest } = {
         ...defaultProps,
         ...props,
     };
 
     return (
-        <label className="font-raleway relative flex cursor-pointer items-center text-sm font-semibold">
+        <label className="relative flex cursor-pointer items-center">
             <>{labelPlacement === "left" && <span>{children}</span>}</>
             <div className="px-2">
                 <input
                     type="radio"
                     className="peer sr-only"
-                    value={value}
-                    defaultChecked={defaultChecked}
                     checked={checked}
-                    disabled={disabled}
                     {...rest}
                 />
                 <div
