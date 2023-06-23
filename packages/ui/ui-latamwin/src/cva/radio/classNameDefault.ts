@@ -1,0 +1,40 @@
+export const classNameDefault = [
+    // Styles of the component
+    "flex",
+    "items-center",
+    "justify-center",
+    "border",
+    "duration-300",
+    "w-5",
+    "h-5",
+    "rounded-full",
+    // Before properties of the component
+    "before:content-['']",
+    "before:absolute",
+    "before:z-[-1]",
+    "before:opacity-0",
+    "before:transition-all",
+    "before:duration-300",
+    "before:w-8",
+    "before:h-8",
+    "before:rounded-full",
+    // After properties of the component
+    "after:content-['']",
+    "after:absolute",
+    "after:z-[1]",
+    "after:opacity-0",
+    "after:transition-all",
+    "after:duration-300",
+    "after:w-2.5",
+    "after:h-2.5",
+    "after:rounded-full",
+    // Peer properties of the component
+    "peer",
+    "peer-checked:after:opacity-100",
+    "peer-checked:before:w-8",
+    "peer-checked:before:h-8",
+    "peer-disabled:before:hidden",
+    "peer-disabled:peer-checked:border-2",
+    //Hover properties of the component
+    "hover:before:opacity-100",
+];
