@@ -1,8 +1,8 @@
 import React from "react";
-import { CheckboxProps } from "./checkbox.interface";
-import { checkboxCva } from "../../../cva/checkbox";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { CheckboxProps } from "./checkbox.interface";
+import { checkboxCva } from "../../../cva/checkbox";
 
 export const defaultProps: CheckboxProps = {
     children: <>label</>,
@@ -11,19 +11,19 @@ export const defaultProps: CheckboxProps = {
 };
 
 /**
- * Radio.
+ * Checkbox.
  *
  * @param props - CheckboxProps.
  * @returns JSX.Element.
  */
-const Radio = (props: CheckboxProps) => {
+const Checkbox = (props: CheckboxProps) => {
     const { children, checked, colorScheme, labelPlacement, ...rest } = {
         ...defaultProps,
         ...props,
     };
 
     return (
-        <label className="font-raleway relative flex cursor-pointer items-center text-sm font-semibold">
+        <label className="relative flex cursor-pointer items-center">
             <>{labelPlacement === "left" && <span>{children}</span>}</>
             <div className="px-2">
                 <input
@@ -40,7 +40,7 @@ const Radio = (props: CheckboxProps) => {
                     <FontAwesomeIcon
                         icon={faCheck}
                         size="1x"
-                        className="text-white"
+                        className="text-light"
                     />
                 </div>
             </div>
@@ -49,4 +49,4 @@ const Radio = (props: CheckboxProps) => {
     );
 };
 
-export default Radio;
+export default Checkbox;

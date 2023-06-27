@@ -24,6 +24,8 @@ const classNameVariantColorScheme = {
         "peer-disabled:border-base-100",
         "peer-disabled:peer-checked:border-neutral-content",
         "peer-disabled:peer-checked:bg-neutral-content",
+        //Pressed props
+        "pressed:border-neutral-content/50",
     ],
 };
 

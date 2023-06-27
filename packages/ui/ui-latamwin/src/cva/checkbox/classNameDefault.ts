@@ -27,7 +27,9 @@ export const classNameDefault = [
     "peer-checked:[&>*]:opacity-100",
     "peer-disabled:before:hidden",
     // Hover properties of the component
-    "hover:before:opacity-50",
+    "hover:before:opacity-100",
+    "peer-checked:hover:before:opacity-50",
     // Pressed properties of the component
     "pressed:before:opacity-100",
+    "peer-checked:pressed:before:opacity-100",
 ];
