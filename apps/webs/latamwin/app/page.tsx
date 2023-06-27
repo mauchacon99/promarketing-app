@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "ui-latamwin";
+import { Button, Checkbox } from "ui-latamwin";
 /**
  * Page.
  *
@@ -8,17 +8,15 @@ import { Button } from "ui-latamwin";
 export default function page() {
     return (
         <>
-            <div>
-                <div className="m-4">
-                    <Button
-                        colorScheme="accent"
-                        variety="contained"
-                        size="lg"
-                        shadow="md"
-                    >
-                        Play
-                    </Button>
-                </div>
+            <div className="m-4">
+                <Button
+                    colorScheme="accent"
+                    variety="contained"
+                    size="lg"
+                    shadow="md"
+                >
+                    Play
+                </Button>
             </div>
         </>
     );
