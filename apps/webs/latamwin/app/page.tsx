@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "ui-latamwin";
+import { Button, Checkbox } from "ui-latamwin";
 /**
  * Page.
  *
@@ -18,6 +18,11 @@ export default function page() {
                     >
                         Play
                     </Button>
+                </div>
+                <div className="bg-light mt-2 py-5">
+                    <Checkbox labelPlacement="right" colorScheme="accent">
+                        Promarketing
+                    </Checkbox>
                 </div>
             </div>
         </>
