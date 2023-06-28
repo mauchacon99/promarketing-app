@@ -17,7 +17,7 @@ const storyBookComponent = {
  * @returns JSX.Element.
  */
 const Template: StoryFn<ButtonProps> = (props: ButtonProps) => {
-    return <Button {...props}> Text </Button>;
+    return <Button {...props} />;
 };
 
 const argTypes: Partial<ArgTypes<ButtonProps>> = {
