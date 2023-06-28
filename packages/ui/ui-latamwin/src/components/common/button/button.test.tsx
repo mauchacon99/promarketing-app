@@ -9,10 +9,10 @@ import {
     classNamePrimaryText,
 } from "@cva/button/compoundVariantsPrimary";
 import {
-    classNameSecondaryOutlined,
-    classNameSecondaryText,
-    classNameSecondaryContained,
-} from "@cva/button/compoundVariantsSecondary";
+    classNameAccentOutlined,
+    classNameAccentText,
+    classNameAccentContained,
+} from "@cva/button/compoundVariantsAccent";
 
 describe("ButtonComponent", () => {
     it("should render a button with the text ui-test", () => {
@@ -68,42 +68,42 @@ describe("ButtonComponent", () => {
             render(
                 <Button
                     data-testid={"test-button"}
-                    colorScheme="secondary"
+                    colorScheme="accent"
                     variety="text"
                 >
                     Test
                 </Button>,
             );
             expect(screen.getByTestId("test-button")).toHaveClass(
-                cx(classNameSecondaryText),
+                cx(classNameAccentText),
             );
         });
         it("should render with the variety outlined", () => {
             render(
                 <Button
                     data-testid={"test-button"}
-                    colorScheme="secondary"
+                    colorScheme="accent"
                     variety="outlined"
                 >
                     Test
                 </Button>,
             );
             expect(screen.getByTestId("test-button")).toHaveClass(
-                cx(classNameSecondaryOutlined),
+                cx(classNameAccentOutlined),
             );
         });
         it("should render with the variety contained", () => {
             render(
                 <Button
                     data-testid={"test-button"}
-                    colorScheme="secondary"
+                    colorScheme="accent"
                     variety="contained"
                 >
                     Test
                 </Button>,
             );
             expect(screen.getByTestId("test-button")).toHaveClass(
-                cx(classNameSecondaryContained),
+                cx(classNameAccentContained),
             );
         });
     });

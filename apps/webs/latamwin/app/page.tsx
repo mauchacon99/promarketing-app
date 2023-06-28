@@ -1,5 +1,5 @@
 "use client";
-import { Button, Checkbox } from "ui-latamwin";
+import { Button } from "ui-latamwin";
 /**
  * Page.
  *
