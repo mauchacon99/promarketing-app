@@ -1,7 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
-import { Button } from "ui-latamwin";
-
+"use client";
+import { Button, Checkbox } from "ui-latamwin";
 /**
  * Page.
  *
@@ -10,22 +8,15 @@ import { Button } from "ui-latamwin";
 export default function page() {
     return (
         <>
-            <div>
-                <div className="m-4">
-                    <FontAwesomeIcon
-                        icon={faCoffee}
-                        size="2xl"
-                        className="text-primary-default"
-                    />
-                    <Button
-                        colorScheme="secondary"
-                        variety="contained"
-                        size="lg"
-                        shadow="md"
-                    >
-                        Play
-                    </Button>
-                </div>
+            <div className="m-4">
+                <Button
+                    colorScheme="accent"
+                    variety="contained"
+                    size="lg"
+                    shadow="md"
+                >
+                    Play
+                </Button>
             </div>
         </>
     );

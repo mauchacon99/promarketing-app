@@ -5,9 +5,9 @@ import { buttonCva } from "../../../cva/button";
 export const defaultProps: ButtonProps = {
     colorScheme: "primary",
     size: "md",
+    children: "Text",
     className: "",
     w: "default",
-    children: "",
 };
 
 /**
