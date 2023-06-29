@@ -6,3 +6,4 @@ export * from "./components/common/icon-button";
 export * from "./components/common/radio";
 export * from "./components/common/radio-check";
 export * from "./components/common/checkbox";
+export * from "./components/common/clock";
