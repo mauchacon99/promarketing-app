@@ -11,17 +11,17 @@ import { timekeeperCva } from "../../../cva/timekeeper";
  * @returns JSX.Element.
  */
 const Timekeeper = (props: TimekeeperProps) => {
-    const { className, children } = {
+    const { sessionTime } = {
         ...props,
     };
 
     return (
         <>
-            <span className={timekeeperCva({ className })}>
+            <span className={timekeeperCva()}>
                 <span className="mr-1.5">
                     <FontAwesomeIcon icon={faUserClock} size="1x" />
                 </span>
-                {children}
+                {sessionTime}
             </span>
         </>
     );

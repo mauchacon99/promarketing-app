@@ -30,7 +30,7 @@ export const TimekeeperComponent = Template.bind({});
 
 TimekeeperComponent.argTypes = argTypes;
 TimekeeperComponent.args = {
-    children: "17:48",
+    sessionTime: "17:48",
 };
 
 export default storyBookComponent;
