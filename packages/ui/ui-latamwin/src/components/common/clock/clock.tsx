@@ -11,17 +11,17 @@ import { clockCva } from "../../../cva/clock";
  * @returns JSX.Element.
  */
 const Clock = (props: ClockProps) => {
-    const { className, children } = {
+    const { hour } = {
         ...props,
     };
 
     return (
         <>
-            <span className={clockCva({ className })}>
+            <span className={clockCva()}>
                 <span className="mr-1.5">
                     <FontAwesomeIcon icon={faClock} size="1x" />
                 </span>
-                {children}
+                {hour}
             </span>
         </>
     );

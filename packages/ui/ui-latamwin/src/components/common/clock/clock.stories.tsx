@@ -30,7 +30,7 @@ export const ClockComponent = Template.bind({});
 
 ClockComponent.argTypes = argTypes;
 ClockComponent.args = {
-    children: "17:48",
+    hour: "17:48",
 };
 
 export default storyBookComponent;
