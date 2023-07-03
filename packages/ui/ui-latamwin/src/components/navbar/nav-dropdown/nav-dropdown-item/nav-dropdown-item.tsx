@@ -1,9 +1,9 @@
 import React, { PropsWithChildren, useId } from "react";
 
 /**
- * NavDropdown.
+ * NavDropdownItem.
  *
- * @param props - NavDropdownProps.
+ * @param props - NavDropdownItemProps.
  * @returns JSX.Element.
  */
 const NavDropdownItem = (props: PropsWithChildren) => {

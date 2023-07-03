@@ -1,10 +1,11 @@
 import React, { PropsWithChildren, useContext } from "react";
-import { navDropdownContext } from "../nav-dropdown/nav-dropdown";
 import { cx } from "class-variance-authority";
+import { navDropdownContext } from "../nav-dropdown/nav-dropdown";
+
 /**
  * NavDropdownList.
  *
- * @param props - NavDropdownProps.
+ * @param props - NavDropdownListProps.
  * @returns JSX.Element.
  */
 const NavDropdownList = (props: PropsWithChildren) => {

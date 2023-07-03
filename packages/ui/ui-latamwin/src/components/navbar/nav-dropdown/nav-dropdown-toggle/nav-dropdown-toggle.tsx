@@ -1,28 +1,24 @@
-import React, { PropsWithChildren, useContext } from "react";
+import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { clsx } from "clsx";
 import "./nav-dropdown.style.scss";
 import { navDropdownContext } from "../nav-dropdown/nav-dropdown";
+import { NavDropdownToggleProps } from "./nav-dropdown-toggle.interface";
 
 /**
- * NavDropdown.
+ * NavDropdownToggle.
  *
- * @param props - NavDropdownProps.
+ * @param props - NavDropdownToggleProps.
  * @returns JSX.Element.
  */
-const NavDropdownToggle = (props: PropsWithChildren) => {
-    const { children } = { ...props };
+const NavDropdownToggle = (props: NavDropdownToggleProps) => {
+    const { children, ...rest } = { ...props };
     const { isOpen, toggleDropdown } = useContext(navDropdownContext);
-
-    /**
-     * Component Toggle.
-     *
-     * @returns JSX.element.
-     */
 
     return (
         <button
+            {...rest}
             onClick={() => toggleDropdown()}
             className={clsx(
                 "nav-dropdown-text-shadow hover:text-primary-default flex items-center text-sm font-bold",
