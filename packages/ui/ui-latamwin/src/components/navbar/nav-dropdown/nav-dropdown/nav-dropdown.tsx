@@ -17,8 +17,6 @@ const defaultProps = {
  * NavDropdown.
  *
  * @param props - NavDropdownProps.
- * @param props.children - NavDropdownProps.
- * @param props.isOpen - NavDropdownProps.
  * @returns JSX.Element.
  */
 const NavDropdown = (props: NavDropdownProps) => {
