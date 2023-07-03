@@ -2,7 +2,7 @@ import { PropsWithChildren } from "react";
 
 export interface NavDropdownProps extends PropsWithChildren {
     /** */
-    defaultOpen: boolean;
+    defaultOpen?: boolean;
 }
 export interface NavDropdownContext extends PropsWithChildren {
     /** */

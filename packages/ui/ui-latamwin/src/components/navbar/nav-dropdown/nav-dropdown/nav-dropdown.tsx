@@ -8,6 +8,11 @@ import { NavDropdownContext, NavDropdownProps } from "./nav-dropdown.interface";
 export const navDropdownContext = createContext({} as NavDropdownContext);
 
 const { Provider } = navDropdownContext;
+
+const defaultProps = {
+    defaultOpen: false,
+};
+
 /**
  * NavDropdown.
  *
@@ -17,7 +22,7 @@ const { Provider } = navDropdownContext;
  * @returns JSX.Element.
  */
 const NavDropdown = (props: NavDropdownProps) => {
-    const { children, defaultOpen } = props;
+    const { children, defaultOpen } = { ...props, ...defaultProps };
     const { isOpen, toggleDropdown } = useNavDropdown({ defaultOpen });
     /**
      * Component Toggle.
