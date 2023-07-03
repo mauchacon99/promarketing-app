@@ -1,11 +1,11 @@
 "use client";
-import { Button, Checkbox } from "ui-latamwin";
+import { Button } from "ui-latamwin";
 /**
  * Page.
  *
  * @returns JSX.Element.
  */
-export default function page() {
+export default function Page() {
     return (
         <>
             <div className="m-4">
