@@ -10,4 +10,5 @@ export * from "./components/common/clock";
 export * from "./components/common/timekeeper";
 
 // navbar component exports
+export * from "./components/navbar/nav-link";
 export * from "./components/navbar/nav-dropdown/nav-dropdown";
