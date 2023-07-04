@@ -1,7 +1,6 @@
-export interface NavLinkProps {
-    /** Cva Props.*/
-    /** Children prop of the component.*/
-    children: React.ReactNode;
-    /** Active prop of the component.*/
+import { PropsWithChildren } from "react";
+
+export interface NavLinkProps extends PropsWithChildren {
+    /** Represents the value if the element is active.*/
     active?: boolean;
 }
