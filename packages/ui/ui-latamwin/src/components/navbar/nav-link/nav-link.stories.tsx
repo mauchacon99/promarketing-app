@@ -4,7 +4,7 @@ import { NavLinkProps } from "./nav-link.interface";
 import NavLink from "./nav-link";
 
 const storyBookComponent = {
-    title: "ElEMENTS/NavLink",
+    title: "NAVBAR/NavLink",
     component: NavLink,
 } as Meta<NavLinkProps>;
 
