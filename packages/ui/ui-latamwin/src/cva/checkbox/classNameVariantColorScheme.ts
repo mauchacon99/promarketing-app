@@ -2,30 +2,30 @@ const classNameVariantColorScheme = {
     accent: [
         //Default props
         "bg-transparent",
-        "border-accent-default",
+        "border-accent-900",
         // Before properties of the component
-        "before:bg-accent-default",
+        "before:bg-accent-900",
         //Peer color props
-        "peer-checked:bg-accent-default",
-        "peer-checked:before:bg-accent-content",
-        "peer-disabled:border-base-100",
-        "peer-disabled:peer-checked:border-neutral-content",
-        "peer-disabled:peer-checked:bg-neutral-content",
+        "peer-checked:bg-accent-900",
+        "peer-checked:before:bg-accent-100",
+        "peer-disabled:border-base-50",
+        "peer-disabled:peer-checked:border-neutral-100",
+        "peer-disabled:peer-checked:bg-neutral-100",
     ],
     light: [
         //Default props
         "bg-transparent",
-        "border-neutral-content",
+        "border-neutral-100",
         // Before properties of the component
-        "before:bg-base-100",
+        "before:bg-base-50",
         //Peer color props
-        "peer-checked:bg-neutral-content",
-        "peer-checked:before:bg-neutral-content",
-        "peer-disabled:border-base-100",
-        "peer-disabled:peer-checked:border-neutral-content",
-        "peer-disabled:peer-checked:bg-neutral-content",
+        "peer-checked:bg-neutral-100",
+        "peer-checked:before:bg-neutral-100",
+        "peer-disabled:border-base-50",
+        "peer-disabled:peer-checked:border-neutral-100",
+        "peer-disabled:peer-checked:bg-neutral-100",
         //Pressed props
-        "pressed:border-neutral-content",
+        "pressed:border-neutral-100",
     ],
 };
 

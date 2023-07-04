@@ -1,25 +1,25 @@
 const classNameVariantColorScheme = {
     accent: [
         //Middle bar color props
-        "bg-primary-content",
+        "bg-primary-100",
         //Circle shadow color props
-        "before:bg-accent-content",
+        "before:bg-accent-100",
         //Circle color props
-        "after:bg-accent-default",
+        "after:bg-accent-900",
         "after:shadow-[1px_1px_4px_rgba(0,0,0,0.25)]",
         //Peer color props
-        "peer-disabled:after:bg-neutral-content",
+        "peer-disabled:after:bg-neutral-100",
     ],
     light: [
         //Middle bar color props
-        "bg-neutral-content",
+        "bg-neutral-100",
         //Circle shadow color props
-        "before:bg-base-100",
+        "before:bg-base-50",
         //Circle color props
         "after:bg-light",
         "after:shadow-[1px_1px_4px_rgba(0,0,0,0.25)]",
         //Peer color props
-        "peer-disabled:after:bg-base-100",
+        "peer-disabled:after:bg-base-50",
     ],
 };
 

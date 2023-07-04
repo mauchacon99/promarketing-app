@@ -1,7 +1,7 @@
 import { cva } from "class-variance-authority";
 
 const classNameDefault = [
-    "bg-base-content",
+    "bg-base-100",
     "flex",
     "items-center",
     "justify-center",

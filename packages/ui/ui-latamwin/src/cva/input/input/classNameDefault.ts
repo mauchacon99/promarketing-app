@@ -11,8 +11,8 @@ export const classNameDefault = [
     // Sibling selector
     "peer",
     // Styles when component is in state DISABLED
-    "disabled:text-neutral-content",
-    "disabled:border-neutral-content",
-    "disabled:placeholder-neutral-content",
-    "disabled:hover:border-primary-focus/6",
+    "disabled:text-neutral-100",
+    "disabled:border-neutral-100",
+    "disabled:placeholder-neutral-100",
+    "disabled:hover:border-primary-500/6",
 ];

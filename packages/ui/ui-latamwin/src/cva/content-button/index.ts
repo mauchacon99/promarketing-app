@@ -12,10 +12,10 @@ const classNameDefault = [
 export const contentButtonCva = cva(classNameDefault, {
     variants: {
         colorScheme: {
-            accent: ["text-accent-default"],
-            error: ["text-error-content"],
-            primary: ["text-primary-default"],
-            neutral: ["text-neutral-content"],
+            accent: ["text-accent-900"],
+            error: ["text-error-100"],
+            primary: ["text-primary-900"],
+            neutral: ["text-neutral-100"],
         },
     },
 });

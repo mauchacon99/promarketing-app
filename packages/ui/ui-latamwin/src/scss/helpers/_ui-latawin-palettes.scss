@@ -2,38 +2,72 @@
     :root {
         /* Palette Colors */
         /* Primary  */
-        --color-primary-default: #091b50;
-        --color-primary-focus: #3c4d82;
-        --color-primary-content: #e0e4ef;
+        --color-primary-50: #F0F2F7;
+        --color-primary-100: #E0E4EF;
+        --color-primary-200: #B7BED4;
+        --color-primary-300: #9BA4BE;
+        --color-primary-400: #8E99B9;
+        --color-primary-500: #3C4D82;
+        --color-primary-600: #2F4176;
+        --color-primary-700: #233469;
+        --color-primary-800: #16285D;
+        --color-primary-900: #091B50;
+        --color-primary-gradient: #091B50;
+        --color-primary-950: #0A1D37;
+
         /* secondary  */
-        --color-secondary-default: #b89122;
-        --color-secondary-focus: #cfac48;
-        --color-secondary-content: #faf3e0;
+        --color-secondary-50: #FDF9F0;
+        --color-secondary-100: #FAF3E0;
+        --color-secondary-200: #F1E5C2;
+        --color-secondary-300: #EBDAAE;
+        --color-secondary-400: #E0C87B;
+        --color-secondary-500: #CFAC48;
+        --color-secondary-600: #C9A53F;
+        --color-secondary-700: #C49F35;
+        --color-secondary-800: #BE982C;
+        --color-secondary-900: #B89122;
+        --color-secondary-gradient: #574205;
+        --color-secondary-950: #574205;
+
         /* accent */
-        --color-accent-default: #fbbf24;
-        --color-accent-focus: #fcd34d;
-        --color-accent-content: #fff7d7;
-        /* neutrals (fonts) */
-        --color-neutral-default: #0a1d37;
-        --color-neutral-focus: #4b5563;
-        --color-neutral-content: #909090;
+        --color-accent-50: #FFFBE8;
+        --color-accent-100: #F7F3E3;
+        --color-accent-200: #FBF9F1;
+        --color-accent-300: #FDDB7B;
+        --color-accent-400: #FCCD4F;
+        --color-accent-500: #FCD34D;
+        --color-accent-600: #FCCE43;
+        --color-accent-700: #FCC939;
+        --color-accent-800: #FBC42E;
+        --color-accent-900: #FBBF24;
+        --color-accent-950: #886407;
+
+        /* neutrals */
+        --color-neutral-50: #C6C6C6;
+        --color-neutral-100: #909090;
+        --color-neutral-200: #7E8185;
+        --color-neutral-300: #6D7279;
+        --color-neutral-400: #5C636E;
+        --color-neutral-500: #4B5563;
+        --color-neutral-600: #3B4658;
+        --color-neutral-700: #2B384D;
+        --color-neutral-800: #1B2A42;
+        --color-neutral-900: #0A1D37;
+        --color-neutral-950: #000000;
 
         /* Feedback Colors */
-        /* colors */
-        --color-info-content: #1d70c7;
-        --color-success-content: #22c55e;
-        --color-warning-content: #f3b51e;
-        --color-error-content: #dc2626;
-        /* opacity colors 50% */
-        --color-info: #d7f1fd;
-        --color-success: #edfbd8;
-        --color-warning: #fef7d1;
-        --color-error: #fce8db;
-        /* Bases */
-        --color-base-100: #efefef;
-        --color-base-200: #192e4f;
-        --color-base-300: #e0c87b;
-        --color-base-content: #ebdaae;
+        /* colors info */
+        --color-info-100: #d7f1fd;
+        --color-info-900: #1d70c7;
+        /* colors success */
+        --color-success-100: #edfbd8;
+        --color-success-900: #22C55E;
+        /* colors warning */
+        --color-warning-100: #FEF7D1;
+        --color-warning-900: #F3B51E;
+        /* colors error */
+        --color-error-100: #FCE8DB;
+        --color-error-900: #dc2626;
     }
 
 }

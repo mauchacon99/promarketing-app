@@ -6,7 +6,7 @@ const classNameDefaultProps = [
     "justify-center",
     "w-full",
     "h-[61px]",
-    "bg-primary-content",
+    "bg-primary-100",
     "text-primary",
     "shadow-sm",
 ];

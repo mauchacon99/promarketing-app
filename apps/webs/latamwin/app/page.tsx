@@ -10,7 +10,7 @@ export default function Page() {
         <>
             <div className="m-4">
                 <Button
-                    colorScheme="accent"
+                    colorScheme="primary"
                     variety="contained"
                     size="lg"
                     shadow="md"
