@@ -19,8 +19,8 @@ export const inputBottomLineCva = cva(classNameDefault, {
                 "peer-focus:bg-primary-500",
                 "peer-pressed:bg-primary-500",
             ],
-            success: "bg-success-100",
-            error: "bg-error-100",
+            success: "bg-success-900",
+            error: "bg-error-900",
         },
     },
 });

@@ -25,7 +25,7 @@ export const varieties = {
     neutralContent: "bg-neutral-100",
     infoDefault: "bg-info-900",
     infoContent: "bg-info-100",
-    successDefault: "bg-success-default",
+    successDefault: "bg-success-900",
     successContent: "bg-success-100",
     warningDefault: "bg-warning-900",
     warningContent: "bg-warning-100",
