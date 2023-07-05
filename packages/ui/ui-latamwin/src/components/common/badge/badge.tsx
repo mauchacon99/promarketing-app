@@ -2,6 +2,10 @@ import React from "react";
 import { BadgeProps } from "./badge.interface";
 import { badgeCva } from "../../../cva/badge";
 
+export const defaultProps: BadgeProps = {
+    content: "",
+    variety: "single",
+};
 /**
  * Badge.
  *
@@ -9,31 +13,18 @@ import { badgeCva } from "../../../cva/badge";
  * @returns JSX.Element.
  */
 const Badge = (props: BadgeProps) => {
-    const {
-        children,
-        content = "",
-        colorScheme,
-        ...rest
-    } = {
+    const { children, content, variety, colorScheme, ...rest } = {
+        ...defaultProps,
         ...props,
     };
 
     /**
-     * Function getVariety.
+     * Function handle type variety.
      *
-     * @param varietyContent Content from the red dot.
      * @returns Variety type.
      */
-    function getVariety(varietyContent: string | number) {
-        const stringVariety = varietyContent.toString();
-        const stringVarietyLength = stringVariety.length;
-
-        if (stringVarietyLength === 0) return "single";
-        else if (stringVarietyLength === 1) return "digit";
-        else return "multidigit";
-    }
-
-    const variety = getVariety(content);
+    const handleTypeVariety =
+        content.toString().length > 1 ? "multidigit" : variety;
 
     return (
         <div className="relative w-fit">
@@ -41,7 +32,7 @@ const Badge = (props: BadgeProps) => {
                 {...rest}
                 className={badgeCva({
                     colorScheme,
-                    variety,
+                    variety: handleTypeVariety,
                 })}
             >
                 {content}

@@ -28,11 +28,43 @@ const argTypes: Partial<ArgTypes<BadgeProps>> = {
     },
 };
 
-export const BadgeComponent = Template.bind({});
+export const BadgeSingle = Template.bind({});
 
-BadgeComponent.argTypes = argTypes;
-BadgeComponent.args = {
+BadgeSingle.argTypes = argTypes;
+BadgeSingle.args = {
     colorScheme: "error",
+    children: (
+        <FontAwesomeIcon
+            icon={faUser}
+            size="1x"
+            className="text-primary-focus block"
+        />
+    ),
+};
+
+export const BadgeDigit = Template.bind({});
+
+BadgeDigit.argTypes = argTypes;
+BadgeDigit.args = {
+    colorScheme: "error",
+    content: 1,
+    variety: "digit",
+    children: (
+        <FontAwesomeIcon
+            icon={faUser}
+            size="1x"
+            className="text-primary-focus block"
+        />
+    ),
+};
+
+export const BadgeMultiDigit = Template.bind({});
+
+BadgeMultiDigit.argTypes = argTypes;
+BadgeMultiDigit.args = {
+    colorScheme: "error",
+    content: 32,
+    variety: "multidigit",
     children: (
         <FontAwesomeIcon
             icon={faUser}
