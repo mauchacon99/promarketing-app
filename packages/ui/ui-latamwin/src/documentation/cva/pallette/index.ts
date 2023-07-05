@@ -35,8 +35,8 @@ export const varieties = {
     base200: "bg-base-950",
     base300: "bg-base-300",
     baseContent: "bg-base-100",
-    lightColor: "bg-light",
-    darkColor: "bg-dark",
+    lightColor: "bg-neutral-50",
+    darkColor: "bg-neutral-950",
 };
 
 export const palletteCva = cva(classNameDefaultProps, {

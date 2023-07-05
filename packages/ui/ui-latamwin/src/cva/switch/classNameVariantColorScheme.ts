@@ -16,7 +16,7 @@ const classNameVariantColorScheme = {
         //Circle shadow color props
         "before:bg-base-50",
         //Circle color props
-        "after:bg-light",
+        "after:bg-neutral-50",
         "after:shadow-[1px_1px_4px_rgba(0,0,0,0.25)]",
         //Peer color props
         "peer-disabled:after:bg-base-50",

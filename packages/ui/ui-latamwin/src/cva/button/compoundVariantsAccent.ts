@@ -18,7 +18,7 @@ export const classNameAccentOutlined = [
     // Styles when component is in state HOVER
     "hover:bg-accent-100",
     // Styles when component is in state PRESS
-    "pressed:text-light",
+    "pressed:text-neutral-50",
     "pressed:bg-accent-500",
     // Styles when component is in state DISABLED
     "disabled:border-neutral-100",
@@ -32,7 +32,7 @@ export const classNameAccentText = [
     "hover:bg-accent-100",
     // Styles when component is in state PRESS
     "pressed:bg-accent-500",
-    "pressed:text-light",
+    "pressed:text-neutral-50",
     // Styles when component is in state DISABLED
     "disabled:text-neutral-100",
     "disabled:bg-base-50",

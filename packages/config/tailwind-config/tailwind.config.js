@@ -9,8 +9,6 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                light: "#FFFFFF",
-                dark: "#000000",
                 primary: {
                     100: "var(--color-primary-100)",
                     200: "var(--color-primary-200)",
@@ -50,6 +48,7 @@ module.exports = {
                     950: "var(--color-accent-950)",
                 },
                 neutral: {
+                    50: "var(--color-neutral-50)",
                     100: "var(--color-neutral-100)",
                     200: "var(--color-neutral-200)",
                     300: "var(--color-neutral-300)",

@@ -7,7 +7,7 @@ const classNameDefaultProps = [
     "leading-3",
     "sm:text-base",
     "sm:leading-[19.2px]",
-    "text-light",
+    "text-neutral-50",
 ];
 
 export const timekeeperCva = cva(classNameDefaultProps);

@@ -4,7 +4,7 @@ export const classNamePrimaryText = [
     "hover:bg-primary-100",
     // Styles when component is in state PRESS
     "pressed:bg-primary-500",
-    "pressed:text-light",
+    "pressed:text-neutral-50",
     // Styles when component is in state DISABLED
     "disabled:text-neutral-100",
     "disabled:bg-base-50",
@@ -19,7 +19,7 @@ export const classNamePrimaryOutlined = [
     "hover:bg-primary-100",
     // Styles when component is in state PRESS
     "pressed:bg-primary-500",
-    "pressed:text-light",
+    "pressed:text-neutral-50",
     // Styles when component is in state DISABLED
     "disabled:bg-base-50",
     "disabled:text-neutral-100",
@@ -28,7 +28,7 @@ export const classNamePrimaryOutlined = [
 
 export const classNamePrimaryContained = [
     "bg-primary-900",
-    "text-light",
+    "text-neutral-50",
     // Styles when component is in state HOVER
     "hover:bg-primary-500",
     // Styles when component is in state DISABLED

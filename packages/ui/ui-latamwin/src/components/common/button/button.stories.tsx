@@ -75,7 +75,7 @@ ChevronLight.args = {
         <FontAwesomeIcon
             icon={faChevronDown}
             size="1x"
-            className="text-light"
+            className="text-neutral-50"
         />
     ),
 };
