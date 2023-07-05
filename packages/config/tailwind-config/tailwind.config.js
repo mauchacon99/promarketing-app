@@ -10,6 +10,7 @@ module.exports = {
         extend: {
             colors: {
                 primary: {
+                    50: "var(--color-primary-50)",
                     100: "var(--color-primary-100)",
                     200: "var(--color-primary-200)",
                     300: "var(--color-primary-300)",
@@ -23,6 +24,7 @@ module.exports = {
                     gradient: "var(--color-primary-gradient)",
                 },
                 secondary: {
+                    50: "var(--color-secondary-50)",
                     100: "var(--color-secondary-100)",
                     200: "var(--color-secondary-200)",
                     300: "var(--color-secondary-300)",
@@ -36,6 +38,7 @@ module.exports = {
                     gradient: "var(--color-secondary-gradient)",
                 },
                 accent: {
+                    50: "var(--color-accent-50)",
                     100: "var(--color-accent-100)",
                     200: "var(--color-accent-200)",
                     300: "var(--color-accent-300)",

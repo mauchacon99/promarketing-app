@@ -1,6 +1,6 @@
 import { HtmlHTMLAttributes } from "react";
 import { type VariantProps } from "class-variance-authority";
-import { palletteCva, varieties } from "../../cva/pallette";
+import { colors, palletteCva } from "../../cva/pallette";
 
 export interface PalletteProps
     extends HtmlHTMLAttributes<HTMLDivElement>,
@@ -8,5 +8,5 @@ export interface PalletteProps
     /** Label. */
     label?: string;
     /** PalletteItems. */
-    palletteItems?: (keyof typeof varieties)[];
+    palletteItems?: (keyof typeof colors)[];
 }

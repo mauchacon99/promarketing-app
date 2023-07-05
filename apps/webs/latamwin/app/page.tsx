@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "ui-latamwin";
+import { Input } from "ui-latamwin";
 /**
  * Page.
  *
@@ -9,14 +9,7 @@ export default function Page() {
     return (
         <>
             <div className="m-4">
-                <Button
-                    colorScheme="primary"
-                    variety="contained"
-                    size="lg"
-                    shadow="md"
-                >
-                    Play
-                </Button>
+                <Input colorScheme="error" />
             </div>
         </>
     );
