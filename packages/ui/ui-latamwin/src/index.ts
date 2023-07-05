@@ -12,3 +12,6 @@ export * from "./components/common/timekeeper";
 // navbar component exports
 export * from "./components/navbar/nav-link";
 export * from "./components/navbar/nav-dropdown/nav-dropdown";
+
+// buttons custom component exports
+export * from "./components/buttons-custom/sign-in-button";
