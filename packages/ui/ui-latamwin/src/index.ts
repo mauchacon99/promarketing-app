@@ -8,6 +8,7 @@ export * from "./components/common/radio-check";
 export * from "./components/common/checkbox";
 export * from "./components/common/clock";
 export * from "./components/common/timekeeper";
+export * from "./components/common/badge";
 
 // navbar component exports
 export * from "./components/navbar/nav-link";
