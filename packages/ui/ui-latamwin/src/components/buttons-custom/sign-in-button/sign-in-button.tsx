@@ -1,18 +1,18 @@
 import React from "react";
 import { cx } from "class-variance-authority";
-import { SignInProps } from "./sign-in.interface";
+import { SignInButtonProps } from "./sign-in-button.interface";
 
-export const defaultProps: SignInProps = {
+export const defaultProps: SignInButtonProps = {
     label: "Sign In Button",
 };
 
 /**
  * SignInButton.
  *
- * @param props - SignInProps.
+ * @param props - SignInButtonProps.
  * @returns JSX.Element.
  */
-const SignIn = (props: SignInProps) => {
+const SignInButton = (props: SignInButtonProps) => {
     const { label, ...rest } = {
         ...defaultProps,
         ...props,
@@ -34,4 +34,4 @@ const SignIn = (props: SignInProps) => {
     );
 };
 
-export default SignIn;
+export default SignInButton;
