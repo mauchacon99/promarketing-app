@@ -1,4 +1,3 @@
-import { colorsWarning } from "./colors/colorWarning";
 import { cva } from "class-variance-authority";
 import {
     colorsAccent,
@@ -8,6 +7,7 @@ import {
     colorsPrimary,
     colorsSecondary,
     colorsSuccess,
+    colorsWarning,
 } from "./colors";
 
 const classNameDefaultProps = [

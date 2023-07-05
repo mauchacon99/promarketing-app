@@ -5,3 +5,4 @@ export { colorsNeutral } from "./colorsNeutral";
 export { colorsError } from "./colorsError";
 export { colorsSuccess } from "./colorSuccess";
 export { colorsInfo } from "./colorsInfo";
+export { colorsWarning } from "./colorWarning";
