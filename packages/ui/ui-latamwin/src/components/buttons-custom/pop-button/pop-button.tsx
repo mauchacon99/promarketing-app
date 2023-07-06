@@ -5,9 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
 export const defaultProps: PopButtonProps = {
-    colorScheme: "accent",
-    view: true,
-    alertInput: true,
+    isVisible: true,
 };
 
 /**
@@ -17,28 +15,18 @@ export const defaultProps: PopButtonProps = {
  * @returns JSX.Element.
  */
 const PopButton = (props: PopButtonProps) => {
-    const { view, colorScheme, alertInput, ...rest } = {
+    const { isVisible, ...rest } = {
         ...defaultProps,
         ...props,
     };
 
     const classNameDefault = cx(
-        //Default Properties
-        "flex items-center justify-center rounded-tr-[11px] w-[45px]",
-        //ColorScheme properties
-        {
-            "text-light bg-accent-default": colorScheme === "accent",
-        },
-        //AlertInput properties
-        {
-            "rounded-br h-11": alertInput,
-            "rounded-br-[11px] h-[46px]": !alertInput,
-        },
+        "flex items-center justify-center rounded-tr-[11px] w-[45px] rounded-br h-11 text-light bg-accent-default",
     );
 
     return (
         <button {...rest} className={classNameDefault}>
-            <FontAwesomeIcon icon={view ? faEye : faEyeSlash} size="1x" />
+            <FontAwesomeIcon icon={isVisible ? faEye : faEyeSlash} size="1x" />
         </button>
     );
 };

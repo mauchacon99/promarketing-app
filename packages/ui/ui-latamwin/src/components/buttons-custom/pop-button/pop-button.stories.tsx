@@ -19,43 +19,21 @@ const Template: StoryFn<PopButtonProps> = (props: PopButtonProps) => {
 };
 
 const argTypes: Partial<ArgTypes<PopButtonProps>> = {
-    view: { type: "boolean" },
-    colorScheme: {
-        defaultValue: "accent",
-        options: ["accent"],
-        control: { type: "radio" },
-    },
-    alertInput: { type: "boolean" },
+    isVisible: { type: "boolean" },
 };
 
-export const PopButtonView = Template.bind({});
+export const PopButtonIsVisible = Template.bind({});
 
-PopButtonView.argTypes = argTypes;
-PopButtonView.args = {
-    view: true,
+PopButtonIsVisible.argTypes = argTypes;
+PopButtonIsVisible.args = {
+    isVisible: true,
 };
 
-export const PopButtonViewAlertFalse = Template.bind({});
+export const PopButtonIsNotVisible = Template.bind({});
 
-PopButtonViewAlertFalse.argTypes = argTypes;
-PopButtonViewAlertFalse.args = {
-    view: true,
-    alertInput: false,
-};
-
-export const PopButtonViewFalse = Template.bind({});
-
-PopButtonViewFalse.argTypes = argTypes;
-PopButtonViewFalse.args = {
-    view: false,
-};
-
-export const PopButtonViewFalseAlertFalse = Template.bind({});
-
-PopButtonViewFalseAlertFalse.argTypes = argTypes;
-PopButtonViewFalseAlertFalse.args = {
-    view: false,
-    alertInput: false,
+PopButtonIsNotVisible.argTypes = argTypes;
+PopButtonIsNotVisible.args = {
+    isVisible: false,
 };
 
 export default storyBookComponent;
