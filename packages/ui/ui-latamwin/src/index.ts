@@ -15,5 +15,6 @@ export * from "./components/navbar/nav-link";
 export * from "./components/navbar/nav-dropdown/nav-dropdown";
 
 // buttons custom component exports
+export * from "./components/buttons-custom/pop-button";
 export * from "./components/buttons-custom/sign-in-button";
 export * from "./components/buttons-custom/sign-up-button";
