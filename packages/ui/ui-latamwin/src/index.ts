@@ -8,3 +8,13 @@ export * from "./components/common/radio-check";
 export * from "./components/common/checkbox";
 export * from "./components/common/clock";
 export * from "./components/common/timekeeper";
+export * from "./components/common/badge";
+
+// navbar component exports
+export * from "./components/navbar/nav-link";
+export * from "./components/navbar/nav-dropdown/nav-dropdown";
+
+// buttons custom component exports
+export * from "./components/buttons-custom/pop-button";
+export * from "./components/buttons-custom/sign-in-button";
+export * from "./components/buttons-custom/sign-up-button";
