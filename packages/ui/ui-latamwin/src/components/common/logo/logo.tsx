@@ -1,6 +1,6 @@
 import React from "react";
 import { LogoProps } from "./logo.interface";
-import { cx } from "class-variance-authority";
+import { logoCva } from "../../../cva/logo";
 
 export const defaultProps: LogoProps = {
     size: "md",
@@ -18,19 +18,9 @@ const Logo = (props: LogoProps) => {
         ...props,
     };
 
-    const classNameDefault = cx(
-        //Default Classes
-        "object-contain",
-        {
-            "w-[122px] h-[30px]": size === "sm",
-            "w-[260px] h-[58px]": size === "md",
-            "w-[260px] h-[68px]": size === "lg",
-        },
-    );
-
     return (
         <>
-            <img {...rest} className={classNameDefault} />
+            <img {...rest} className={logoCva({ size })} />
         </>
     );
 };
