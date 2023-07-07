@@ -11,7 +11,7 @@ export const classNameAccentContained = [
 ];
 
 export const classNameAccentOutlined = [
-    "bg-base-50",
+    "bg-primary-50",
     "text-accent-900",
     "border-2",
     "border-accent-900",
@@ -23,7 +23,7 @@ export const classNameAccentOutlined = [
     // Styles when component is in state DISABLED
     "disabled:border-neutral-100",
     "disabled:text-neutral-100",
-    "disabled:bg-base-50",
+    "disabled:bg-primary-50",
 ];
 
 export const classNameAccentText = [
@@ -35,5 +35,5 @@ export const classNameAccentText = [
     "pressed:text-neutral-50",
     // Styles when component is in state DISABLED
     "disabled:text-neutral-100",
-    "disabled:bg-base-50",
+    "disabled:bg-primary-50",
 ];

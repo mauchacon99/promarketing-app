@@ -21,12 +21,12 @@ const NavDropdownToggle = (props: NavDropdownToggleProps) => {
             {...rest}
             onClick={() => toggleDropdown()}
             className={clsx(
-                "nav-dropdown-text-shadow hover:text-primary-default flex items-center text-sm font-bold",
+                "nav-dropdown-text-shadow hover:text-primary-900 flex items-center text-sm font-bold",
                 //Peer properties
                 "peer",
                 {
-                    "text-primary-default": isOpen,
-                    "text-light": !isOpen,
+                    "text-primary-900": isOpen,
+                    "text-neutral-50": !isOpen,
                 },
             )}
         >

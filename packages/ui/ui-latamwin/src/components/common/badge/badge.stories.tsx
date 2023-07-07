@@ -37,7 +37,7 @@ BadgeSingle.args = {
         <FontAwesomeIcon
             icon={faUser}
             size="1x"
-            className="text-primary-focus block"
+            className="text-primary-500 block"
         />
     ),
 };
@@ -53,7 +53,7 @@ BadgeDigit.args = {
         <FontAwesomeIcon
             icon={faUser}
             size="1x"
-            className="text-primary-focus block"
+            className="text-primary-500 block"
         />
     ),
 };
@@ -69,7 +69,7 @@ BadgeMultiDigit.args = {
         <FontAwesomeIcon
             icon={faUser}
             size="1x"
-            className="text-primary-focus block"
+            className="text-primary-500 block"
         />
     ),
 };

@@ -6,7 +6,7 @@ const classNamePrimary = [
     // Styles when component is in state HOVER
     "pressed:bg-primary-500",
     // Styles when component is in state DISABLED
-    "disabled:bg-base-50",
+    "disabled:bg-primary-50",
     "disabled:text-neutral-100",
 ];
 
@@ -32,7 +32,7 @@ const classNameLight = [
     "pressed:text-neutral-50",
     // Styles when component is in state DISABLED
     "disabled:text-neutral-100",
-    "disabled:bg-base-50",
+    "disabled:bg-primary-50",
 ];
 
 const classNameVariantColorScheme = {

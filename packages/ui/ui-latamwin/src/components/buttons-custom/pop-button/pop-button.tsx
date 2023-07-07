@@ -21,7 +21,7 @@ const PopButton = (props: PopButtonProps) => {
     };
 
     const classNameDefault = cx(
-        "flex items-center justify-center rounded-tr-[11px] w-[45px] rounded-br h-11 text-light bg-accent-default",
+        "flex items-center justify-center rounded-tr-[11px] w-[45px] rounded-br h-11 text-neutral-50 bg-accent-900",
     );
 
     return (

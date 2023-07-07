@@ -25,7 +25,7 @@ const storyBookComponent = {
 const Template: StoryFn<PropsWithChildren> = () => {
     return (
         <div className="h-1/2 w-full p-10">
-            <div className="bg-base-300  w-full px-5 py-5">
+            <div className="bg-secondary-gradient  w-full px-5 py-5">
                 <ul className="flex list-none p-0">
                     <NavDropdown defaultOpen>
                         <NavDropdown.Toggle>Menu</NavDropdown.Toggle>

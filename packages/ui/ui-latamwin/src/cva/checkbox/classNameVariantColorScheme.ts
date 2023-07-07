@@ -8,7 +8,7 @@ const classNameVariantColorScheme = {
         //Peer color props
         "peer-checked:bg-accent-900",
         "peer-checked:before:bg-accent-100",
-        "peer-disabled:border-base-50",
+        "peer-disabled:border-primary-50",
         "peer-disabled:peer-checked:border-neutral-100",
         "peer-disabled:peer-checked:bg-neutral-100",
     ],
@@ -17,11 +17,11 @@ const classNameVariantColorScheme = {
         "bg-transparent",
         "border-neutral-100",
         // Before properties of the component
-        "before:bg-base-50",
+        "before:bg-primary-50",
         //Peer color props
         "peer-checked:bg-neutral-100",
         "peer-checked:before:bg-neutral-100",
-        "peer-disabled:border-base-50",
+        "peer-disabled:border-primary-50",
         "peer-disabled:peer-checked:border-neutral-100",
         "peer-disabled:peer-checked:bg-neutral-100",
         //Pressed props
