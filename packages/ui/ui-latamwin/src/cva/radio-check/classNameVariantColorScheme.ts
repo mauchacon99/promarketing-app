@@ -7,20 +7,21 @@ const classNameVariantColorScheme = {
         "before:bg-accent-100",
         //Peer color props
         "peer-checked:bg-accent-900",
-        "peer-disabled:border-neutral-100",
-        "peer-disabled:peer-checked:bg-neutral-100",
-        "peer-disabled:before:bg-neutral-100",
+        "peer-disabled:border-neutral-200",
+        "peer-disabled:peer-checked:bg-neutral-200",
+        "peer-disabled:before:bg-neutral-200",
     ],
     light: [
         //Circle props
         "bg-transparent",
-        "border-neutral-100",
+        "border-neutral-200",
         //Circle shadow color props
-        "before:bg-primary-50",
+        "before:bg-neutral-100",
         //Peer color props
         "peer-checked:bg-neutral-100",
-        "peer-disabled:border-primary-50",
-        "peer-disabled:peer-checked:bg-primary-50",
+        "peer-disabled:border-neutral-200",
+        "peer-disabled:bg-neutral-100",
+        "peer-disabled:peer-checked:bg-neutral-200",
         "peer-disabled:before:bg-neutral-100",
         //Pressed props
         "pressed:border-neutral-500",
