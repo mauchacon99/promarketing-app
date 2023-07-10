@@ -11,6 +11,11 @@ import {
 } from "./compoundVariantsAccent";
 import variantShadow from "./classNameVariantShadow";
 import variantSizes from "./classNameVariantSize";
+import {
+    classNameSecondaryContained,
+    classNameSecondaryOutlined,
+    classNameSecondaryText,
+} from "./compoundVariantsSecondary";
 
 const classNameDefault = ["font-serif", "font-bold"];
 
@@ -19,6 +24,7 @@ export const buttonCva = cva(classNameDefault, {
         colorScheme: {
             primary: [],
             accent: [],
+            secondary: [],
         },
         variety: {
             outlined: [],
@@ -48,6 +54,21 @@ export const buttonCva = cva(classNameDefault, {
             colorScheme: "primary",
             variety: "text",
             className: classNamePrimaryText,
+        },
+        {
+            colorScheme: "secondary",
+            variety: "contained",
+            className: classNameSecondaryContained,
+        },
+        {
+            colorScheme: "secondary",
+            variety: "outlined",
+            className: classNameSecondaryOutlined,
+        },
+        {
+            colorScheme: "secondary",
+            variety: "text",
+            className: classNameSecondaryText,
         },
         {
             colorScheme: "accent",
