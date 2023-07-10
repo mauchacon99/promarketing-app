@@ -23,7 +23,11 @@ const Template: StoryFn<BadgeProps> = (props: BadgeProps) => {
 const argTypes: Partial<ArgTypes<BadgeProps>> = {
     content: { type: "string" },
     colorScheme: {
-        options: ["error"],
+        options: ["error", "primary"],
+        control: { type: "radio" },
+    },
+    variety: {
+        options: ["single", "digit", "multidigit"],
         control: { type: "radio" },
     },
 };
@@ -49,13 +53,7 @@ BadgeDigit.args = {
     colorScheme: "error",
     content: 1,
     variety: "digit",
-    children: (
-        <FontAwesomeIcon
-            icon={faUser}
-            size="1x"
-            className="text-primary-500 block"
-        />
-    ),
+    children: <FontAwesomeIcon icon={faUser} size="1x" className="block" />,
 };
 
 export const BadgeMultiDigit = Template.bind({});
