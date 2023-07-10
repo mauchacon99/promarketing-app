@@ -1,9 +1,9 @@
 import React from "react";
 import { ArgTypes, Meta, StoryFn } from "@storybook/react";
-import { ButtonProps } from "./button.interface";
-import Button from "./button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { ButtonProps } from "./button.interface";
+import Button from "./button";
 
 const storyBookComponent = {
     title: "ElEMENTS/ButtonWithIcon",
@@ -46,10 +46,10 @@ const argTypes: Partial<ArgTypes<ButtonProps>> = {
     disabled: { type: "boolean" },
 };
 
-export const IconChevron = Template.bind({});
+export const ButtonWithIconChevron = Template.bind({});
 
-IconChevron.argTypes = argTypes;
-IconChevron.args = {
+ButtonWithIconChevron.argTypes = argTypes;
+ButtonWithIconChevron.args = {
     colorScheme: "secondary",
     variety: "contained",
     size: "md",
