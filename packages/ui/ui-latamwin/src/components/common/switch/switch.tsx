@@ -20,7 +20,7 @@ const Switch = (props: SwitchProps) => {
     };
 
     return (
-        <label className="relative inline-flex cursor-pointer items-center">
+        <label className="relative inline-flex cursor-pointer items-center hover:z-10">
             <input
                 type="checkbox"
                 className="peer sr-only"

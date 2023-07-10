@@ -21,7 +21,7 @@ const Template: StoryFn<RadioProps> = (props: RadioProps) => {
 const argTypes: Partial<ArgTypes<RadioProps>> = {
     checked: { type: "boolean" },
     colorScheme: {
-        options: ["accent", "light"],
+        options: ["accent"],
         control: { type: "radio" },
     },
     labelPlacement: {

@@ -21,7 +21,7 @@ const Template: StoryFn<CheckboxProps> = (props: CheckboxProps) => {
 const argTypes: Partial<ArgTypes<CheckboxProps>> = {
     checked: { type: "boolean" },
     colorScheme: {
-        options: ["accent", "light"],
+        options: ["accent"],
         control: { type: "radio" },
     },
     labelPlacement: {
