@@ -2,9 +2,11 @@ import React from "react";
 import { ArgTypes, Meta, StoryFn } from "@storybook/react";
 import { ButtonProps } from "./button.interface";
 import Button from "./button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const storyBookComponent = {
-    title: "ElEMENTS/Button",
+    title: "ElEMENTS/ButtonWithIcon",
     component: Button,
 } as Meta<ButtonProps>;
 
@@ -25,7 +27,7 @@ const argTypes: Partial<ArgTypes<ButtonProps>> = {
         control: { type: "radio" },
     },
     variety: {
-        options: ["contained", "outlined", "text"],
+        options: ["contained", "outlined"],
         control: { type: "radio" },
     },
     size: {
@@ -44,27 +46,15 @@ const argTypes: Partial<ArgTypes<ButtonProps>> = {
     disabled: { type: "boolean" },
 };
 
-export const Primary = Template.bind({});
+export const IconChevron = Template.bind({});
 
-Primary.argTypes = argTypes;
-Primary.args = {
-    colorScheme: "primary",
-    variety: "contained",
-};
-
-export const Accent = Template.bind({});
-
-Accent.argTypes = argTypes;
-Accent.args = {
-    colorScheme: "accent",
-    variety: "contained",
-};
-export const Secondary = Template.bind({});
-
-Secondary.argTypes = argTypes;
-Secondary.args = {
+IconChevron.argTypes = argTypes;
+IconChevron.args = {
     colorScheme: "secondary",
     variety: "contained",
+    size: "md",
+    w: "auto",
+    children: <FontAwesomeIcon icon={faChevronDown} size="1x" />,
 };
 
 export default storyBookComponent;
