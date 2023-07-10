@@ -2,6 +2,7 @@ import React from "react";
 import { ArgTypes, Meta, StoryFn } from "@storybook/react";
 import { LogoProps } from "./logo.interface";
 import Logo from "./logo";
+import logoImg from "../../../assets/img/logo.png";
 
 const storyBookComponent = {
     title: "ElEMENTS/Logo",
@@ -17,8 +18,6 @@ const storyBookComponent = {
 const Template: StoryFn<LogoProps> = (props: LogoProps) => {
     return <Logo {...props} />;
 };
-
-import logoImg from "../../../assets/img/logo.png";
 
 const argTypes: Partial<ArgTypes<LogoProps>> = {
     size: {

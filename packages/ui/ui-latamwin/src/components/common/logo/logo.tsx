@@ -2,10 +2,6 @@ import React from "react";
 import { LogoProps } from "./logo.interface";
 import { logoCva } from "../../../cva/logo";
 
-export const defaultProps: LogoProps = {
-    size: "md",
-};
-
 /**
  * Logo.
  *
@@ -14,7 +10,6 @@ export const defaultProps: LogoProps = {
  */
 const Logo = (props: LogoProps) => {
     const { size, ...rest } = {
-        ...defaultProps,
         ...props,
     };
 
