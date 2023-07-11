@@ -18,4 +18,12 @@ export interface InputProps
     w?: "default" | "auto" | "full";
     /** Represent value is loading.*/
     loading?: boolean;
+    /** Represent classes add a left element.*/
+    leftElementClasses?: string;
+    /** Represent classes add a right element.*/
+    rightElementClasses?: string;
+    /** Represents element aligned to the right of the input. */
+    rightElement?: JSX.Element;
+    /** Represents element aligned to the left of the input. */
+    leftElement?: JSX.Element;
 }

@@ -26,7 +26,7 @@
         --color-secondary-700: #C49F35;
         --color-secondary-800: #BE982C;
         --color-secondary-900: #B89122;
-        --color-secondary-gradient: #574205;
+        --color-secondary-gradient: #E9CD72;
         --color-secondary-950: #574205;
 
         /* accent */
@@ -68,6 +68,15 @@
         /* colors error */
         --color-error-100: #FCE8DB;
         --color-error-900: #dc2626;
+
+
+        /* custom color for nav */
+        --color-nav-link-text: #091B50;
+        --color-nav-link-hover: #091B50;
+        --color-nav-link-active: #091B50;
+        --color-nav-icon: #091B50;
+        --color-nav-wallet-text: #091B50;
+
     }
 
 }
