@@ -1,6 +1,6 @@
 const classNameVariantError = [
-    "text-neutral-100",
-    "placeholder-neutral-100",
+    "text-neutral-500",
+    "placeholder-neutral-200",
     "border-error-900",
     // Styles when component is in state HOVER
     "hover:border-error-900",
@@ -10,19 +10,15 @@ const classNameVariantError = [
     "pressed:border-error-900",
 ];
 const classNameVariantDefault = [
-    "text-neutral-100",
-    "placeholder-neutral-100",
+    "text-neutral-500",
+    "placeholder-neutral-200",
     "border-secondary-500",
-    // Styles when component is in state HOVER
-    "hover:border-primary-500",
-    // Styles when component is in state FOCUSED
-    "focus:border-primary-500",
     // Styles when component is in state PRESS
-    "pressed:border-primary-500",
+    "pressed:drop-shadow-xl",
 ];
 const classNameVariantSuccess = [
-    "text-neutral-100",
-    "placeholder-neutral-100",
+    "text-neutral-500",
+    "placeholder-neutral-200",
     "border-success-900",
     // Styles when component is in state HOVER
     "hover:border-success-900",
