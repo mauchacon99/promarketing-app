@@ -9,6 +9,7 @@ export * from "./components/common/checkbox";
 export * from "./components/common/clock";
 export * from "./components/common/timekeeper";
 export * from "./components/common/badge";
+export * from "./components/common/logo";
 
 // navbar component exports
 export * from "./components/navbar/nav-link";
