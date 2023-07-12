@@ -7,7 +7,7 @@ const classNameDefaultProps = [
     "leading-3",
     "sm:text-base",
     "sm:leading-[19.2px]",
-    "text-neutral-50",
+    "text-primary-100",
 ];
 
 export const clockCva = cva(classNameDefaultProps);
