@@ -1,6 +1,6 @@
 import React from "react";
 import { RoundButtonIconProps } from "./round-button-icon.interface";
-import { roundButtonIconCva } from "../cva/round-button-icon";
+import { roundButtonIconCva } from "../../../cva/round-button-icon";
 import "./round-button-icon.style.scss";
 
 /**
