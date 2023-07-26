@@ -2,6 +2,8 @@ import React from "react";
 import { ArgTypes, Meta, StoryFn } from "@storybook/react";
 import { ButtonProps } from "./button.interface";
 import Button from "./button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const storyBookComponent = {
     title: "ElEMENTS/Button",
@@ -19,10 +21,10 @@ const Template: StoryFn<ButtonProps> = (props: ButtonProps) => {
 };
 
 const argTypes: Partial<ArgTypes<ButtonProps>> = {
+    children: { type: "string" },
     colorScheme: {
-        options: ["primary", "secondary"],
+        options: ["primary", "accent"],
         control: { type: "radio" },
-        description: "Este es el button principal",
     },
     variety: {
         options: ["contained", "outlined", "text"],
@@ -51,12 +53,31 @@ Primary.args = {
     colorScheme: "primary",
     variety: "contained",
 };
-export const Secondary = Template.bind({});
-Secondary.args = {
-    colorScheme: "secondary",
+
+export const Accent = Template.bind({});
+
+Accent.argTypes = argTypes;
+Accent.args = {
+    colorScheme: "accent",
     variety: "contained",
 };
 
-Secondary.argTypes = argTypes;
+export const ChevronLight = Template.bind({});
+
+ChevronLight.argTypes = argTypes;
+ChevronLight.args = {
+    colorScheme: "accent",
+    variety: "contained",
+    size: "md",
+    w: "auto",
+    className: "px-[32px] rounded-[14px]",
+    children: (
+        <FontAwesomeIcon
+            icon={faChevronDown}
+            size="1x"
+            className="text-light"
+        />
+    ),
+};
 
 export default storyBookComponent;

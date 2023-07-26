@@ -25,6 +25,10 @@
         "ui-latamwin": "0.0.0"
     },
     "devDependencies": {
+        "@fortawesome/fontawesome-svg-core": "^6.4.0",
+        "@fortawesome/free-brands-svg-icons": "^6.4.0",
+        "@fortawesome/free-solid-svg-icons": "^6.4.0",
+        "@fortawesome/react-fontawesome": "^0.2.0",
         "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
         "@types/node": "^17.0.12",
         "@types/react": "^18.0.22",
