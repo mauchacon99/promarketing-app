@@ -10,6 +10,7 @@
         "./tsconfig.eslint.json",
         "./tsconfig.json",
         ".eslintrc.cjs",
-        "./turbo/generators/config.ts"
+        "./turbo/generators/config.ts",
+        "./jest.config.ts"
     ]
 }
