@@ -8,7 +8,8 @@
         "lint:check": "eslint \"**/*.ts*\"",
         "format": "prettier --write \"**/*.{ts,tsx,md,js,json}\"",
         "format:check": "prettier --check  \"**/*.{ts,tsx,md,js,json}\"",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "test": "turbo run test"
     },
     "devDependencies": {
         "@commitlint/config-conventional": "^17.6.5",
