@@ -5,12 +5,12 @@
         // that you want to lint here
         // add all files in which you see
         // the "parserOptions.project" error
-
         "./tsconfig.eslint.json",
         "./tsconfig.json",
         ".eslintrc.js",
         "postcss.config.js",
         "tailwind.config.js",
-        "vite.config.ts"
+        "vite.config.ts",
+        "./themes/*"
     ]
 }
