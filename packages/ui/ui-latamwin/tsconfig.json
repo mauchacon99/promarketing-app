@@ -2,17 +2,27 @@
     "extends": "tsconfig/react-library.json",
     "compilerOptions": {
         "paths": {
-            "@cva/*": ["cva/*"],
-            "@components/*": ["components/*"]
+            "@cva/*": [
+                "cva/*"
+            ],
+            "@components/*": [
+                "components/*"
+            ]
         },
         "baseUrl": "src",
-        "types": ["@types/node", "jest"],
         "jsx": "react"
     },
     "rules": {
         "indent": "off",
         "@typescript-eslint/indent": "error"
     },
-    "include": ["**/*.ts", "**/*.tsx", "**/*.scss"],
-    "exclude": ["node_modules", "dist"]
+    "include": [
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.scss"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
 }
