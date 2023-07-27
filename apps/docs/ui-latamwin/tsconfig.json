@@ -8,9 +8,7 @@
             }
         ],
         "paths": {
-            "@/*": [
-                "./src/*"
-            ]
+            "@/*": ["./src/*"]
         },
         "incremental": true
     },
@@ -21,7 +19,5 @@
         "./tsconfig.eslint.json",
         "./themes/**/*"
     ],
-    "exclude": [
-        "node_modules"
-    ]
+    "exclude": ["node_modules"]
 }
