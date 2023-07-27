@@ -18,7 +18,7 @@ export default function Page() {
                     Play
                 </Button>
                 <div className="h-1/2 w-full p-10">
-                    <div className="bg-base-300  w-full px-5 py-5">
+                    <div className="bg-secondary-gradient  w-full px-5 py-5">
                         <div className="flex list-none p-0">
                             <NavDropdown defaultOpen>
                                 <NavDropdown.Toggle>Menu</NavDropdown.Toggle>
