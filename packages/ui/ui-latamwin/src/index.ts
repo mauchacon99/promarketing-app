@@ -1,21 +1,21 @@
 // component exports
 
-export * from "./components/common/button";
-export * from "./components/common/input";
-export * from "./components/common/icon-button";
-export * from "./components/common/radio";
-export * from "./components/common/radio-check";
-export * from "./components/common/checkbox";
-export * from "./components/common/clock";
-export * from "./components/common/timekeeper";
-export * from "./components/common/badge";
-export * from "./components/common/logo";
+export * from "./components/ui/button";
+export * from "./components/ui/input";
+export * from "./components/ui/icon-button";
+export * from "./components/ui/radio";
+export * from "./components/ui/radio-check";
+export * from "./components/ui/checkbox";
+export * from "./components/ui/clock";
+export * from "./components/ui/timekeeper";
+export * from "./components/ui/badge";
+export * from "./components/ui/logo";
 
 // navbar component exports
-export * from "./components/navbar/nav-link";
-export * from "./components/navbar/nav-dropdown/nav-dropdown";
+export * from "./components/ui/navbar/nav-link";
+export * from "./components/ui/navbar/nav-dropdown/nav-dropdown";
 
 // buttons custom component exports
-export * from "./components/buttons-custom/pop-button";
-export * from "./components/buttons-custom/sign-in-button";
-export * from "./components/buttons-custom/sign-up-button";
+export * from "./components/custom/buttons/pop-button";
+export * from "./components/custom/buttons/sign-in-button";
+export * from "./components/custom/buttons/sign-up-button";
