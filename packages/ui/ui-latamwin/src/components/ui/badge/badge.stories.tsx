@@ -37,13 +37,7 @@ export const BadgeSingle = Template.bind({});
 BadgeSingle.argTypes = argTypes;
 BadgeSingle.args = {
     colorScheme: "error",
-    children: (
-        <FontAwesomeIcon
-            icon={faUser}
-            size="1x"
-            className="text-primary-500 block"
-        />
-    ),
+    children: <FontAwesomeIcon icon={faUser} size="1x" />,
 };
 
 export const BadgeDigit = Template.bind({});
@@ -63,13 +57,7 @@ BadgeMultiDigit.args = {
     colorScheme: "error",
     content: 32,
     variety: "multidigit",
-    children: (
-        <FontAwesomeIcon
-            icon={faUser}
-            size="1x"
-            className="text-primary-500 block"
-        />
-    ),
+    children: <FontAwesomeIcon icon={faUser} size="1x" />,
 };
 
 export default storyBookComponent;

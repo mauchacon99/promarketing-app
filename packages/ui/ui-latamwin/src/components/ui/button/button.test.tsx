@@ -7,12 +7,12 @@ import {
     classNamePrimaryContained,
     classNamePrimaryOutlined,
     classNamePrimaryText,
-} from "@cva/button/compoundVariantsPrimary";
+} from "./../../../cva/ui/button/compoundVariantsPrimary";
 import {
     classNameAccentOutlined,
     classNameAccentText,
     classNameAccentContained,
-} from "@cva/button/compoundVariantsAccent";
+} from "./../../../cva/ui/button/compoundVariantsAccent";
 
 describe("ButtonComponent", () => {
     it("should render a button with the text ui-test", () => {
