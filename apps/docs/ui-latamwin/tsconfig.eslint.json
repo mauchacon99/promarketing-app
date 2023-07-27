@@ -11,6 +11,6 @@
         "postcss.config.js",
         "tailwind.config.js",
         "vite.config.ts",
-        "./themes/*"
+        "./themes/**/*"
     ]
 }

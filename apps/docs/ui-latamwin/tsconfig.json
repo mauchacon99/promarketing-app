@@ -8,10 +8,20 @@
             }
         ],
         "paths": {
-            "@/*": ["./src/*"]
+            "@/*": [
+                "./src/*"
+            ]
         },
         "incremental": true
     },
-    "include": ["**/*.ts", "**/*.tsx", "./tsconfig.eslint.json", "./themes/*"],
-    "exclude": ["node_modules"]
+    "include": [
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.js",
+        "./tsconfig.eslint.json",
+        "./themes/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
 }
