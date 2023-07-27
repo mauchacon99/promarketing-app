@@ -21,10 +21,10 @@ const NavLink = (props: NavLinkProps) => {
     };
 
     const classNameDefault = cx(
-        "text-light flex items-center border-b-2 border-solid border-transparent p-1 text-lg font-bold leading-[21px]",
-        "hover:text-primary-default",
+        "text-neutral-50 flex items-center border-b-2 border-solid border-transparent p-1 text-lg font-bold leading-[21px]",
+        "hover:text-primary-900",
         {
-            "text-primary-default border-b-primary-default": active,
+            "text-primary-900 border-b-primary-900": active,
             "nav-link-text-shadow": !active,
         },
     );

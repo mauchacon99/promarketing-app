@@ -1,5 +1,12 @@
 import React from "react";
 import { ArgTypes, Meta, StoryFn } from "@storybook/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faSearch,
+    faFilterCircleXmark,
+} from "@fortawesome/free-solid-svg-icons";
+import { PopButton } from "../../buttons-custom/pop-button";
+
 import { InputProps } from "./input.interface";
 import Input from "./input";
 
@@ -57,6 +64,46 @@ Error.args = {
     colorScheme: "error",
     placeholder: "Placeholder",
     hasBottomLine: true,
+};
+export const WithElementRight = Template.bind({});
+
+WithElementRight.argTypes = argTypes;
+WithElementRight.args = {
+    colorScheme: "default",
+    placeholder: "Placeholder",
+    rightElementClasses: "z-10",
+    rightElement: <PopButton />,
+};
+export const WithElementLeft = Template.bind({});
+
+WithElementLeft.argTypes = argTypes;
+WithElementLeft.args = {
+    colorScheme: "default",
+    placeholder: "Placeholder",
+    className: "pl-10",
+    leftElement: (
+        <FontAwesomeIcon icon={faSearch} className="text-neutral-100" />
+    ),
+    leftElementClasses: "p-4",
+};
+export const WithElementRightAndLeft = Template.bind({});
+
+WithElementRightAndLeft.argTypes = argTypes;
+WithElementRightAndLeft.args = {
+    colorScheme: "default",
+    placeholder: "Placeholder",
+    className: "pl-10",
+    leftElement: (
+        <FontAwesomeIcon
+            icon={faFilterCircleXmark}
+            className="text-neutral-100"
+        />
+    ),
+    leftElementClasses: "p-4",
+    rightElement: (
+        <FontAwesomeIcon icon={faSearch} className="text-neutral-100" />
+    ),
+    rightElementClasses: "p-4",
 };
 
 export default storyBookComponent;

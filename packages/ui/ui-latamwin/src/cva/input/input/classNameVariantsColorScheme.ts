@@ -1,35 +1,31 @@
 const classNameVariantError = [
-    "text-neutral-content",
-    "placeholder-neutral-content",
-    "border-error-content",
+    "text-neutral-500",
+    "placeholder-neutral-200",
+    "border-error-900",
     // Styles when component is in state HOVER
-    "hover:border-error-content",
+    "hover:border-error-900",
     // Styles when component is in state FOCUSED
-    "focus:border-error-content",
+    "focus:border-error-900",
     // Styles when component is in state PRESS
-    "pressed:border-error-content",
+    "pressed:border-error-900",
 ];
 const classNameVariantDefault = [
-    "text-neutral-content",
-    "placeholder-neutral-content",
-    "border-secondary-focus",
-    // Styles when component is in state HOVER
-    "hover:border-primary-focus",
-    // Styles when component is in state FOCUSED
-    "focus:border-primary-focus",
+    "text-neutral-500",
+    "placeholder-neutral-200",
+    "border-secondary-500",
     // Styles when component is in state PRESS
-    "pressed:border-primary-focus",
+    "pressed:drop-shadow-xl",
 ];
 const classNameVariantSuccess = [
-    "text-neutral-content",
-    "placeholder-neutral-content",
-    "border-success-content",
+    "text-neutral-500",
+    "placeholder-neutral-200",
+    "border-success-900",
     // Styles when component is in state HOVER
-    "hover:border-success-content",
+    "hover:border-success-900",
     // Styles when component is in state FOCUSED
-    "focus:border-success-content",
+    "focus:border-success-900",
     // Styles when component is in state PRESS
-    "pressed:border-success-content",
+    "pressed:border-success-900",
 ];
 
 export const classNameVariantColorScheme = {

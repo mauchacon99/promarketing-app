@@ -17,7 +17,7 @@ const NavDropdownList = (props: PropsWithChildren) => {
     return (
         <ul
             className={cx(
-                "bg-base-content absolute left-0 top-full mt-[9px] min-w-[176px] list-none rounded-[14px] pb-[16.52px] pl-[13.15px] pr-[14.41px] pt-[14.45px]",
+                "bg-secondary-300 absolute left-0 top-full mt-[9px] min-w-[176px] list-none rounded-[14px] pb-[16.52px] pl-[13.15px] pr-[14.41px] pt-[14.45px]",
                 {
                     "pointer-events-none invisible": !isOpen,
                 },

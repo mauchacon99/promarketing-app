@@ -17,7 +17,7 @@ const storyBookComponent = {
 const Template: StoryFn<ClockProps> = (props: ClockProps) => {
     return (
         <>
-            <div className="bg-primary-default relative w-fit px-9 py-1.5">
+            <div className="bg-primary-900 relative w-fit px-9 py-1.5">
                 <Clock {...props} />
             </div>
         </>

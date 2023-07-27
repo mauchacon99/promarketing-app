@@ -20,7 +20,7 @@ const SignUpButton = (props: SignUpButtonProps) => {
 
     const classNameDefault = cx(
         //Default Properties
-        "flex items-center bg-primary-default text-light font-bold",
+        "flex items-center bg-primary-900 text-neutral-50 font-bold",
         //Mobile Properties
         "text-xs leading-[14px] px-[18px] py-2 rounded-lg",
         //Desktop Properties

@@ -1,4 +1,5 @@
 import React from "react";
+import { cx } from "class-variance-authority";
 import { InputProps } from "./input.interface";
 import {
     inputCva,
@@ -12,6 +13,8 @@ export const defaultProps: InputProps = {
     w: "default",
     className: "",
     hasBottomLine: false,
+    rightElementClasses: "",
+    leftElementClasses: "",
 };
 
 /**
@@ -27,6 +30,11 @@ const Input = (props: InputProps) => {
         colorScheme,
         hasBottomLine,
         w: width,
+        disabled,
+        rightElementClasses,
+        leftElementClasses,
+        rightElement,
+        leftElement,
         ...rest
     } = {
         ...defaultProps,
@@ -64,7 +72,11 @@ const Input = (props: InputProps) => {
         return (
             <>
                 {helperText && (
-                    <span className={inputHelperTextCva({ colorScheme })}>
+                    <span
+                        className={cx(inputHelperTextCva({ colorScheme }), {
+                            "!text-neutral-200": disabled,
+                        })}
+                    >
                         {helperText}
                     </span>
                 )}
@@ -75,14 +87,37 @@ const Input = (props: InputProps) => {
     return (
         <>
             <div className={inputWidthCva({ w: width })}>
+                {leftElement && (
+                    <div
+                        className={cx(
+                            "absolute inset-y-0 left-0",
+                            leftElementClasses,
+                        )}
+                    >
+                        {leftElement}
+                    </div>
+                )}
+
                 <input
                     className={inputCva({
                         className,
                         colorScheme,
                     })}
+                    disabled={disabled}
                     {...rest}
                 />
-                <BottomLine />
+                {rightElement && (
+                    <div
+                        className={cx(
+                            "absolute inset-y-0 right-0",
+                            rightElementClasses,
+                        )}
+                    >
+                        {rightElement}
+                    </div>
+                )}
+
+                {!disabled && <BottomLine />}
             </div>
             <HelperText />
         </>

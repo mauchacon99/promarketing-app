@@ -14,13 +14,13 @@ export const inputBottomLineCva = cva(classNameDefault, {
     variants: {
         colorScheme: {
             default: [
-                "bg-secondary-focus",
-                "peer-hover:bg-primary-focus",
-                "peer-focus:bg-primary-focus",
-                "peer-pressed:bg-primary-focus",
+                "bg-secondary-500",
+                "peer-hover:bg-primary-500",
+                "peer-focus:bg-primary-500",
+                "peer-pressed:bg-primary-500",
             ],
-            success: "bg-success-content",
-            error: "bg-error-content",
+            success: "bg-success-900",
+            error: "bg-error-900",
         },
     },
 });

@@ -39,7 +39,7 @@ const RadioCheck = (props: RadioCheckProps) => {
                     <FontAwesomeIcon
                         icon={faCheck}
                         size="xs"
-                        className="text-light"
+                        className="text-neutral-50"
                     />
                 </div>
             </div>

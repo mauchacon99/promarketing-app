@@ -40,7 +40,7 @@ const Checkbox = (props: CheckboxProps) => {
                     <FontAwesomeIcon
                         icon={faCheck}
                         size="1x"
-                        className="text-light"
+                        className="text-neutral-50"
                     />
                 </div>
             </div>

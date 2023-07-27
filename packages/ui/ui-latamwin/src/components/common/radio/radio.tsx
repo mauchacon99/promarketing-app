@@ -20,7 +20,7 @@ const Radio = (props: RadioProps) => {
     };
 
     return (
-        <label className="relative flex cursor-pointer items-center">
+        <label className="relative  z-10 flex cursor-pointer items-center  ">
             <>{labelPlacement === "left" && <span>{children}</span>}</>
             <div className="px-2">
                 <input

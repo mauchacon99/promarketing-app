@@ -20,7 +20,7 @@ const SignInButton = (props: SignInButtonProps) => {
 
     const classNameDefault = cx(
         //Default Properties
-        "flex items-center border-2 border-primary-default text-primary-default font-bold",
+        "flex items-center border-2 border-primary-900 text-primary-900 font-bold",
         //Mobile Properties
         "text-xs leading-[14px] px-[18px] py-1.5 rounded-lg",
         //Desktop Properties

@@ -12,6 +12,12 @@
         },
         "incremental": true
     },
-    "include": ["**/*.ts", "**/*.tsx", "./tsconfig.eslint.json", "./themes/*"],
+    "include": [
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.js",
+        "./tsconfig.eslint.json",
+        "./themes/**/*"
+    ],
     "exclude": ["node_modules"]
 }

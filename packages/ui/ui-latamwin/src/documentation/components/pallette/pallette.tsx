@@ -15,19 +15,21 @@ const Pallette = (props: PalletteProps) => {
 
     return (
         <>
-            <span className="font-roboto text-bold text-bold mb-2 block text-[40px]">
+            <span className="font-roboto text-bold text-bold mb-2 block text-lg">
                 {label}
             </span>
-            {palletteItems?.map((variant, index) => {
-                return (
-                    <div key={index} className="mb-4 flex items-center">
-                        <div className={palletteCva({ variant })}></div>
-                        <span className="font-roboto block text-lg uppercase">
-                            {variant}
-                        </span>
-                    </div>
-                );
-            })}
+            <div className="grid grid-cols-4 gap-4">
+                {palletteItems?.map((variant, index) => {
+                    return (
+                        <div key={index} className="mb-4 flex items-center">
+                            <div className={palletteCva({ variant })}></div>
+                            <span className="font-roboto block text-sm uppercase">
+                                {variant}
+                            </span>
+                        </div>
+                    );
+                })}
+            </div>
         </>
     );
 };

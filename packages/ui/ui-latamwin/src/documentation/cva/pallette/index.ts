@@ -1,4 +1,14 @@
 import { cva } from "class-variance-authority";
+import {
+    colorsAccent,
+    colorsError,
+    colorsInfo,
+    colorsNeutral,
+    colorsPrimary,
+    colorsSecondary,
+    colorsSuccess,
+    colorsWarning,
+} from "./colors";
 
 const classNameDefaultProps = [
     "block",
@@ -9,38 +19,18 @@ const classNameDefaultProps = [
     "rounded-[10px]",
     "mr-[10px]",
 ];
-
-export const varieties = {
-    primaryDefault: "bg-primary-default",
-    primaryFocus: "bg-primary-focus",
-    primaryContent: "bg-primary-content",
-    secondaryDefault: "bg-secondary-default",
-    secondaryFocus: "bg-secondary-focus",
-    secondaryContent: "bg-secondary-content",
-    accentDefault: "bg-accent-default",
-    accentFocus: "bg-accent-focus",
-    accentContent: "bg-accent-content",
-    neutralDefault: "bg-neutral-default",
-    neutralFocus: "bg-neutral-focus",
-    neutralContent: "bg-neutral-content",
-    infoDefault: "bg-info-default",
-    infoContent: "bg-info-content",
-    successDefault: "bg-success-default",
-    successContent: "bg-success-content",
-    warningDefault: "bg-warning-default",
-    warningContent: "bg-warning-content",
-    errorDefault: "bg-error-default",
-    errorContent: "bg-error-content",
-    base100: "bg-base-100",
-    base200: "bg-base-200",
-    base300: "bg-base-300",
-    baseContent: "bg-base-content",
-    lightColor: "bg-light",
-    darkColor: "bg-dark",
+export const colors = {
+    ...colorsPrimary,
+    ...colorsAccent,
+    ...colorsSecondary,
+    ...colorsNeutral,
+    ...colorsError,
+    ...colorsSuccess,
+    ...colorsInfo,
+    ...colorsWarning,
 };
-
 export const palletteCva = cva(classNameDefaultProps, {
     variants: {
-        variant: varieties,
+        variant: colors,
     },
 });
