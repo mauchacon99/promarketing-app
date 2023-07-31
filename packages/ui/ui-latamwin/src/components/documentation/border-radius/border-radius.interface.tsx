@@ -1,6 +1,6 @@
 import { HtmlHTMLAttributes } from "react";
 import { type VariantProps } from "class-variance-authority";
-import { borderRadiusCva } from "../../cva/border-radius";
+import { borderRadiusCva } from "../../../cva/documentation/border-radius";
 
 export interface BorderRadiusProps
     extends HtmlHTMLAttributes<HTMLDivElement>,
