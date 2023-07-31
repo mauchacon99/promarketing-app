@@ -1,6 +1,6 @@
 import React from "react";
 import { BorderRadiusProps } from "./border-radius.interface";
-import { borderRadiusCva } from "../../cva/border-radius";
+import { borderRadiusCva } from "../../../cva/documentation/border-radius";
 
 /**
  * BorderRadius.
