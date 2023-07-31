@@ -1,8 +1,8 @@
 import React from "react";
+import { cx } from "class-variance-authority";
 import { ButtonProps } from "./button.interface";
 import { buttonCva } from "../../../../src/cva/ui/button";
-import { cx } from "class-variance-authority";
-import { shadowCva } from "@cva/shared/shadow";
+import { shadowCva } from "./../../../cva/shared/shadow";
 
 export const defaultProps: ButtonProps = {
     colorScheme: "primary",
