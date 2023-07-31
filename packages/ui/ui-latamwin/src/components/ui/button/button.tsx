@@ -1,6 +1,8 @@
 import React from "react";
 import { ButtonProps } from "./button.interface";
 import { buttonCva } from "../../../../src/cva/ui/button";
+import { cx } from "class-variance-authority";
+import { shadowCva } from "@cva/shared/shadow";
 
 export const defaultProps: ButtonProps = {
     colorScheme: "primary",
@@ -34,14 +36,16 @@ const Button = (props: ButtonProps) => {
     return (
         <button
             {...rest}
-            className={buttonCva({
-                w: width,
-                shadow,
-                colorScheme,
-                size,
-                variety,
-                className,
-            })}
+            className={cx(
+                buttonCva({
+                    w: width,
+                    colorScheme,
+                    size,
+                    variety,
+                    className,
+                }),
+                shadowCva({ shadow }),
+            )}
         >
             {children}
         </button>

@@ -2,6 +2,7 @@ import React from "react";
 import { ArgTypes, Meta, StoryFn } from "@storybook/react";
 import { ButtonProps } from "./button.interface";
 import Button from "./button";
+import { argTypesShadow } from "../../../cva/shared/shadow";
 
 const storyBookComponent = {
     title: "ElEMENTS/Button",
@@ -36,11 +37,7 @@ const argTypes: Partial<ArgTypes<ButtonProps>> = {
         options: ["default", "auto", "full"],
         control: { type: "radio" },
     },
-    shadow: {
-        defaultValue: "none",
-        options: ["none", "sm", "md", "lg", "xl"],
-        control: { type: "radio" },
-    },
+    shadow: argTypesShadow,
     disabled: { type: "boolean" },
 };
 
