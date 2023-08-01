@@ -9,7 +9,6 @@ import {
     classNameAccentOutlined,
     classNameAccentText,
 } from "./compoundVariantsAccent";
-import variantShadow from "./classNameVariantShadow";
 import variantSizes from "./classNameVariantSize";
 import {
     classNameSecondaryContained,
@@ -36,7 +35,6 @@ export const buttonCva = cva(classNameDefault, {
             auto: "w-fit",
             full: "w-full",
         },
-        shadow: variantShadow,
         size: variantSizes,
     },
     compoundVariants: [

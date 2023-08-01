@@ -1,14 +1,15 @@
 import React from "react";
 import { ArgTypes, Meta, StoryFn } from "@storybook/react";
-import { RoundButtonIconProps } from "./round-button-icon.interface";
-import RoundButtonIcon from "./round-button-icon";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faSearch,
     faFilter,
     faCircleInfo,
 } from "@fortawesome/free-solid-svg-icons";
+import { RoundButtonIconProps } from "./round-button-icon.interface";
+import RoundButtonIcon from "./round-button-icon";
 import { IconFacebook } from "../../../../assets/icons/socialIcons";
+import { argTypesShadow } from "../../../../cva/shared/shadow";
 
 const storyBookComponent = {
     title: "BUTTONS CUSTOM/RoundButtonIcon",
@@ -29,15 +30,16 @@ const Template: StoryFn<RoundButtonIconProps> = (
 
 const argTypes: Partial<ArgTypes<RoundButtonIconProps>> = {
     variety: {
-        options: ["standardLight", "standardDark", "outline", "filled"],
+        options: ["neutral", "primary", "accent", "secondary"],
         control: { type: "radio" },
     },
+    shadow: argTypesShadow,
 };
 
-export const StandardLight = Template.bind({});
-StandardLight.argTypes = argTypes;
-StandardLight.args = {
-    variety: "standardLight",
+export const Neutral = Template.bind({});
+Neutral.argTypes = argTypes;
+Neutral.args = {
+    variety: "neutral",
     children: (
         <FontAwesomeIcon
             icon={faSearch}
@@ -46,10 +48,10 @@ StandardLight.args = {
     ),
 };
 
-export const StandardDark = Template.bind({});
-StandardDark.argTypes = argTypes;
-StandardDark.args = {
-    variety: "standardDark",
+export const Primary = Template.bind({});
+Primary.argTypes = argTypes;
+Primary.args = {
+    variety: "primary",
     children: (
         <FontAwesomeIcon
             icon={faFilter}
@@ -58,10 +60,10 @@ StandardDark.args = {
     ),
 };
 
-export const Outline = Template.bind({});
-Outline.argTypes = argTypes;
-Outline.args = {
-    variety: "outline",
+export const Accent = Template.bind({});
+Accent.argTypes = argTypes;
+Accent.args = {
+    variety: "accent",
     children: (
         <FontAwesomeIcon
             icon={faCircleInfo}
@@ -70,11 +72,11 @@ Outline.args = {
     ),
 };
 
-export const Filled = Template.bind({});
-Filled.argTypes = argTypes;
-Filled.args = {
-    variety: "filled",
-    children: <IconFacebook className="round-button-icon-svg h-5 w-5" />,
+export const Secondary = Template.bind({});
+Secondary.argTypes = argTypes;
+Secondary.args = {
+    variety: "secondary",
+    children: <IconFacebook className=" h-5 w-5" />,
 };
 
 export default storyBookComponent;
