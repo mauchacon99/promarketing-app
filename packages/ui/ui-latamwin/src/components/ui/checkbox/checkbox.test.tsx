@@ -8,7 +8,7 @@ import classNameVariantColorScheme from "@cva/ui/checkbox/classNameVariantColorS
 describe("CheckboxComponent", () => {
     it("should render a checkbox with the children text", () => {
         render(
-            <Checkbox data-testid="test-cb" labelPlacement="left">
+            <Checkbox data-testid="test-checkbox" labelPlacement="left">
                 ui-test
             </Checkbox>,
         );
@@ -18,7 +18,7 @@ describe("CheckboxComponent", () => {
     describe("Checkbox component colorScheme", () => {
         it("should have light color scheme", () => {
             render(
-                <Checkbox data-testid="test-cb" labelPlacement="left">
+                <Checkbox data-testid="test-checkbox" labelPlacement="left">
                     ui-test
                 </Checkbox>,
             );
@@ -29,7 +29,7 @@ describe("CheckboxComponent", () => {
         it("should have accent color scheme", () => {
             render(
                 <Checkbox
-                    data-testid="test-cb"
+                    data-testid="test-checkbox"
                     labelPlacement="left"
                     colorScheme="accent"
                     checked={true}
@@ -63,7 +63,7 @@ describe("CheckboxComponent", () => {
     describe("Checkbox component state", () => {
         it("should render a checkbox unchecked by default", () => {
             render(
-                <Checkbox data-testid="test-cb" labelPlacement="left">
+                <Checkbox data-testid="test-checkbox" labelPlacement="left">
                     ui-test
                 </Checkbox>,
             );
@@ -72,7 +72,7 @@ describe("CheckboxComponent", () => {
         it("should render a checkbox checked when is true", () => {
             render(
                 <Checkbox
-                    data-testid="test-cb"
+                    data-testid="test-checkbox"
                     labelPlacement="left"
                     checked={true}
                 >
@@ -83,7 +83,7 @@ describe("CheckboxComponent", () => {
         });
         it("should toggle state when clicked", () => {
             render(
-                <Checkbox data-testid="test-cb" labelPlacement="left">
+                <Checkbox data-testid="test-checkbox" labelPlacement="left">
                     ui-test
                 </Checkbox>,
             );
