@@ -4,6 +4,7 @@ import "@testing-library/jest-dom";
 import { cx } from "class-variance-authority";
 import Checkbox from "./checkbox";
 import classNameVariantColorScheme from "@cva/ui/checkbox/classNameVariantColorScheme";
+import { classNameDefault } from "@cva/ui/checkbox/classNameDefault";
 
 describe("CheckboxComponent", () => {
     it("should render a checkbox with the children text", () => {
@@ -23,7 +24,7 @@ describe("CheckboxComponent", () => {
                 </Checkbox>,
             );
             expect(screen.getByRole("checkbox").nextElementSibling).toHaveClass(
-                cx(classNameVariantColorScheme.light),
+                cx(classNameDefault, classNameVariantColorScheme.light),
             );
         });
         it("should have accent color scheme", () => {
@@ -33,12 +34,15 @@ describe("CheckboxComponent", () => {
                     labelPlacement="left"
                     colorScheme="accent"
                     checked={true}
+                    onChange={() => {
+                        return; // required for use checked prop
+                    }}
                 >
                     ui-test
                 </Checkbox>,
             );
             expect(screen.getByRole("checkbox").nextElementSibling).toHaveClass(
-                cx(classNameVariantColorScheme.accent),
+                cx(classNameDefault, classNameVariantColorScheme.accent),
             );
         });
     });
@@ -74,7 +78,7 @@ describe("CheckboxComponent", () => {
                 <Checkbox
                     data-testid="test-checkbox"
                     labelPlacement="left"
-                    checked={true}
+                    defaultChecked={true}
                 >
                     ui-test
                 </Checkbox>,
