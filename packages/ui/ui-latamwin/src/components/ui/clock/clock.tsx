@@ -21,7 +21,7 @@ const Clock = (props: ClockProps) => {
                 <span className="mr-1.5">
                     <FontAwesomeIcon icon={faClock} size="1x" />
                 </span>
-                {hour}
+                <time dateTime={hour}>{hour}</time>
             </span>
         </>
     );
