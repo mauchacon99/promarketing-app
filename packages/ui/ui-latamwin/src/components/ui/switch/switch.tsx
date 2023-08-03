@@ -24,7 +24,7 @@ const Switch = (props: SwitchProps) => {
             <input
                 type="checkbox"
                 className="peer sr-only"
-                checked={defaultValue}
+                defaultChecked={defaultValue}
                 disabled={isDisabled}
                 {...rest}
             />
