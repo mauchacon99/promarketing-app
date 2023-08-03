@@ -1,8 +1,8 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import { clockCva } from "@cva/ui/clock";
 import { cx } from "class-variance-authority";
+import { clockCva } from "@cva/ui/clock";
 import Clock from "./clock";
 
 describe("Clock Component", () => {
